@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-secure-foundation plan 01 (Wave 0 test scaffold)
-last_updated: "2026-03-07T12:41:29.643Z"
+stopped_at: Completed 01-secure-foundation plan 02 (Wave 1 encrypted DB foundation)
+last_updated: "2026-03-07T12:52:51.619Z"
 last_activity: 2026-03-06 — Roadmap created
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 7
-  completed_plans: 1
+  completed_plans: 2
   percent: 0
 ---
 
@@ -51,6 +51,7 @@ Progress: [░░░░░░░░░░] 0%
 
 *Updated after each plan completion*
 | Phase 01-secure-foundation P01 | 2 | 2 tasks | 11 files |
+| Phase 01-secure-foundation P02 | 6 | 2 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -67,6 +68,9 @@ Recent decisions affecting current work:
 - [Phase 01-secure-foundation]: Drift + sqflite_sqlcipher chosen for encrypted SQLite ORM layer
 - [Phase 01-secure-foundation]: Wave 0 test stub pattern: skip: stubs compile without production code — replaced per wave
 - [Phase 01-secure-foundation]: test/helpers/in_memory_database.dart established as shared Drift fixture — implemented in Wave 1
+- [Phase 01-secure-foundation]: sqflite_sqlcipher removed; drift 2.32 + sqlite3mc hooks used for encryption (deprecated package replaced)
+- [Phase 01-secure-foundation]: app_database.g.dart hand-authored (no Flutter SDK on execution machine); must be regenerated with build_runner when SDK available
+- [Phase 01-secure-foundation]: openEncryptedDatabase() top-level function in app_database.dart for Riverpod injection; PRAGMA cipher assertion guards against silent unencrypted opens
 
 ### Pending Todos
 
@@ -79,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T12:41:29.641Z
-Stopped at: Completed 01-secure-foundation plan 01 (Wave 0 test scaffold)
+Last session: 2026-03-07T12:52:51.616Z
+Stopped at: Completed 01-secure-foundation plan 02 (Wave 1 encrypted DB foundation)
 Resume file: None
