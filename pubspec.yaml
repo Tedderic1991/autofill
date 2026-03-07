@@ -10,25 +10,52 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # Drift for local SQLite + encryption
-  drift: ^2.18.0
-  drift_flutter: ^0.2.0
-  # SQLCipher for AES encryption at rest
-  sqflite_sqlcipher: ^2.3.0+1
-  # Secure key storage
-  flutter_secure_storage: ^9.0.0
-  # Biometric authentication
-  local_auth: ^2.2.0
-  # UUID generation
-  uuid: ^4.4.0
+  # Drift for local SQLite + encrypted ORM (SQLite3MultipleCiphers since 2.32)
+  drift: ^2.32.0
+  drift_flutter: ^0.3.0
+  # Secure key storage backed by Android Keystore
+  flutter_secure_storage: ^10.0.0
+  # Biometric + PIN authentication at app launch
+  local_auth: ^3.0.1
+  # State management
+  flutter_riverpod: ^3.2.1
+  riverpod_annotation: ^3.2.1
+  # Immutable domain models
+  freezed_annotation: ^3.0.0
+  # Navigation
+  go_router: ^17.1.0
+  # UUID v4 generation for all entity PKs
+  uuid: ^4.5.0
+  # Photo/avatar handling
+  image_picker: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  integration_test:
+    sdk: flutter
+  # Drift code generation
+  drift_dev: ^2.32.0
+  build_runner: ^2.4.0
+  # Riverpod code generation
+  riverpod_generator: ^3.2.1
+  # Immutable model code generation
+  freezed: ^3.0.0
+  # Lint rules
   flutter_lints: ^3.0.0
-  # Drift build runner for code generation
-  drift_dev: ^2.18.0
-  build_runner: ^2.4.9
+  # Mock library for unit tests (no codegen needed)
+  mocktail: ^1.0.0
+
+# SQLite3MultipleCiphers encryption hooks for drift_flutter
+# Source: drift.simonbinder.eu/platforms/encryption/
+# Note: This hooks configuration requires Dart pub workspaces or a workspace
+# pubspec.yaml. If not supported at the app level, use the NativeDatabase
+# setup callback PRAGMA key approach (already in app_database.dart) with
+# the sqlite3mc library bundled by drift_flutter ^0.3.0.
+hooks:
+  user_defines:
+    sqlite3:
+      source: sqlite3mc
 
 flutter:
   uses-material-design: true
