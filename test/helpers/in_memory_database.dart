@@ -1,28 +1,21 @@
 // In-memory Drift database fixture for unit tests.
 //
-// TODO: import 'package:autofill/data/database/app_database.dart';
+// Opens an AppDatabase backed by NativeDatabase.memory() — no encryption,
+// no file I/O. Safe to call in any unit test without a device or real storage.
 //
-// Once AppDatabase is implemented in Wave 1, replace the stub below with:
+// All unit tests that need database access should call openTestDatabase() in
+// their setUp() and close the returned AppDatabase in tearDown():
 //
-//   import 'package:drift/native.dart';
-//   import 'package:autofill/data/database/app_database.dart';
-//
-//   Future<AppDatabase> openTestDatabase() async {
-//     return AppDatabase(NativeDatabase.memory());
-//   }
-//
-// For now this file establishes the path and import contract so all test
-// files can reference it with a stable import.
+//   late AppDatabase db;
+//   setUp(() async { db = await openTestDatabase(); });
+//   tearDown(() async { await db.close(); });
+
+import 'package:autofill/data/database/app_database.dart';
+import 'package:drift/native.dart';
 
 /// Opens an in-memory Drift database for testing.
 ///
 /// No encryption, no file I/O — safe to call in any unit test.
-/// Replace the body with the real implementation once AppDatabase exists (Wave 1).
-Future<Never> openTestDatabase() {
-  return Future.error(
-    UnimplementedError(
-      'openTestDatabase: AppDatabase not yet implemented. '
-      'This stub will be replaced in Wave 1.',
-    ),
-  );
+Future<AppDatabase> openTestDatabase() async {
+  return AppDatabase(NativeDatabase.memory());
 }
