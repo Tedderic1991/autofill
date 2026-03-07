@@ -1556,6 +1556,9 @@ abstract class _$AppDatabase extends GeneratedDatabase {
 
   late final $ProfilesTable profiles = $ProfilesTable(this);
   late final $CustomFieldsTable customFields = $CustomFieldsTable(this);
+  late final ProfilesDao profilesDao = ProfilesDao(this as AppDatabase);
+  late final CustomFieldsDao customFieldsDao =
+      CustomFieldsDao(this as AppDatabase);
 
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>

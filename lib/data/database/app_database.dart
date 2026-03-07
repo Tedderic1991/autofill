@@ -14,6 +14,8 @@ import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:sqlite3/sqlite3.dart';
 
+import 'daos/custom_fields_dao.dart';
+import 'daos/profiles_dao.dart';
 import 'tables/custom_fields_table.dart';
 import 'tables/profiles_table.dart';
 
@@ -71,7 +73,10 @@ QueryExecutor openEncryptedDatabase(String passphrase, File dbFile) {
 /// ```dart
 /// final db = AppDatabase(NativeDatabase.memory());
 /// ```
-@DriftDatabase(tables: [Profiles, CustomFields])
+@DriftDatabase(
+  tables: [Profiles, CustomFields],
+  daos: [ProfilesDao, CustomFieldsDao],
+)
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.e);
 
