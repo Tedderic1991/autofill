@@ -30,7 +30,16 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. App requires biometric authentication (or PIN fallback) to open — profile data is never visible without it
   4. Profile data is encrypted at rest using SQLCipher with a key in Android Keystore — the raw database file is unreadable without the key
   5. Attempting to create a third profile on the free tier shows an upgrade prompt instead of creating the profile
-**Plans**: TBD
+**Plans**: 7 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Wave 0 test scaffolds for all requirements
+- [ ] 01-02-PLAN.md — Project bootstrap: pubspec, manifest, KeyManager, Drift tables, code gen
+- [ ] 01-03-PLAN.md — Domain models (freezed), DAOs, repository interfaces + implementations, DB provider
+- [ ] 01-04-PLAN.md — ProfileUseCase (CRUD + freemium cap), CustomFieldUseCase, Riverpod providers
+- [ ] 01-05-PLAN.md — Profile CRUD UI: list screen, edit form, avatar picker, custom field editor, paywall stub
+- [ ] 01-06-PLAN.md — App entry point, go_router with auth guard, biometric auth gate screen
+- [ ] 01-07-PLAN.md — Full automated test suite + human verification checkpoint
 
 ### Phase 2: Android Autofill Integration
 **Goal**: The app appears as an Android autofill service, presents family member profiles in the OS autofill tray, and fills an entire form after biometric confirmation
@@ -86,7 +95,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Secure Foundation | 0/TBD | Not started | - |
+| 1. Secure Foundation | 0/7 | Not started | - |
 | 2. Android Autofill Integration | 0/TBD | Not started | - |
 | 3. Field Detection Engine | 0/TBD | Not started | - |
 | 4. Freemium and IAP | 0/TBD | Not started | - |
