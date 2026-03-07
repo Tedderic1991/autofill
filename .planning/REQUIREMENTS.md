@@ -7,22 +7,22 @@
 
 ### Profiles
 
-- [ ] **PROF-01**: User can create a family member profile with built-in fields: name, date of birth, address, phone number, allergies, and emergency contacts
-- [ ] **PROF-02**: User can edit any field on an existing profile
-- [ ] **PROF-03**: User can delete a profile (with confirmation)
-- [ ] **PROF-04**: User can add a photo or avatar to a profile
-- [ ] **PROF-05**: User can assign a relationship tag to each profile (Parent, Child, Guardian)
-- [ ] **PROF-06**: Free tier allows a maximum of 2 profiles; attempting to create a third prompts the upgrade paywall
-- [ ] **PROF-07**: User can add custom fields to any profile with a user-defined label and a type (text, number, or date)
-- [ ] **PROF-08**: User can edit and delete custom fields on a profile
-- [ ] **PROF-09**: Custom fields are per-profile and included in autofill fill responses alongside built-in fields
+- [x] **PROF-01**: User can create a family member profile with built-in fields: name, date of birth, address, phone number, allergies, and emergency contacts
+- [x] **PROF-02**: User can edit any field on an existing profile
+- [x] **PROF-03**: User can delete a profile (with confirmation)
+- [x] **PROF-04**: User can add a photo or avatar to a profile
+- [x] **PROF-05**: User can assign a relationship tag to each profile (Parent, Child, Guardian)
+- [x] **PROF-06**: Free tier allows a maximum of 2 profiles; attempting to create a third prompts the upgrade paywall
+- [x] **PROF-07**: User can add custom fields to any profile with a user-defined label and a type (text, number, or date)
+- [x] **PROF-08**: User can edit and delete custom fields on a profile
+- [x] **PROF-09**: Custom fields are per-profile and included in autofill fill responses alongside built-in fields
 
 ### Security
 
 - [ ] **SEC-01**: App requires biometric authentication (fingerprint or face) to open
 - [ ] **SEC-02**: Autofill fill request is gated behind biometric auth via native AuthActivity before any profile data is returned to the OS
 - [ ] **SEC-03**: User can set a PIN as a fallback when biometric authentication fails or is unavailable
-- [ ] **SEC-04**: All profile data is encrypted at rest using SQLCipher with a key stored in Android Keystore
+- [x] **SEC-04**: All profile data is encrypted at rest using SQLCipher with a key stored in Android Keystore
 - [ ] **SEC-05**: Onboarding displays a clear warning that uninstalling the app permanently destroys profile data (Keystore key is app-scoped)
 
 ### Autofill Integration
@@ -90,16 +90,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SEC-04 | Phase 1 | Pending |
-| PROF-01 | Phase 1 | Pending |
-| PROF-02 | Phase 1 | Pending |
-| PROF-03 | Phase 1 | Pending |
-| PROF-04 | Phase 1 | Pending |
-| PROF-05 | Phase 1 | Pending |
-| PROF-06 | Phase 1 | Pending |
-| PROF-07 | Phase 1 | Pending |
-| PROF-08 | Phase 1 | Pending |
-| PROF-09 | Phase 1 | Pending |
+| SEC-04 | Phase 1 | Complete |
+| PROF-01 | Phase 1 | Complete |
+| PROF-02 | Phase 1 | Complete |
+| PROF-03 | Phase 1 | Complete |
+| PROF-04 | Phase 1 | Complete |
+| PROF-05 | Phase 1 | Complete |
+| PROF-06 | Phase 1 | Complete |
+| PROF-07 | Phase 1 | Complete |
+| PROF-08 | Phase 1 | Complete |
+| PROF-09 | Phase 1 | Complete |
 | SEC-01 | Phase 2 | Pending |
 | SEC-02 | Phase 2 | Pending |
 | SEC-03 | Phase 2 | Pending |
