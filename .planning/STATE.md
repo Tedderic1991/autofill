@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-secure-foundation plan 04 (Wave 3 use cases and entitlement provider)
-last_updated: "2026-03-07T13:09:04.656Z"
+stopped_at: Completed 01-secure-foundation plan 05 (Wave 4 profile CRUD UI)
+last_updated: "2026-03-07T13:18:58.767Z"
 last_activity: 2026-03-06 — Roadmap created
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 7
-  completed_plans: 4
+  completed_plans: 5
   percent: 0
 ---
 
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-secure-foundation P02 | 6 | 2 tasks | 11 files |
 | Phase 01-secure-foundation P03 | 8min | 2 tasks | 19 files |
 | Phase 01-secure-foundation P04 | 3min | 2 tasks | 8 files |
+| Phase 01-secure-foundation P05 | 7min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -79,6 +80,9 @@ Recent decisions affecting current work:
 - [Phase 01-secure-foundation]: entitlementTierProvider is a Phase 1 stub returning EntitlementTier.free — Phase 4 replaces via Riverpod overrideWith with no other code changes
 - [Phase 01-secure-foundation]: ProfileUseCase has no Riverpod dependency — pure domain class with constructor injection; entitlement tier resolved before construction in profileUseCaseProvider
 - [Phase 01-secure-foundation]: deleteProfile does not cascade custom field soft-deletes; cascade is caller responsibility or DB FK constraint
+- [Phase 01-secure-foundation]: ProfileEditScreen loads profile via profileRepositoryProvider.getById() rather than profileListProvider stream
+- [Phase 01-secure-foundation]: CustomFieldEditorWidget uses reload-on-mutation pattern (no stream in CustomFieldRepository) — avoids adding watchActiveForProfile to interface in Phase 1
+- [Phase 01-secure-foundation]: PaywallStubScreen is an intentional no-op in Phase 1; Phase 4 replaces Upgrade button with RevenueCat purchase flow via overrideWith
 
 ### Pending Todos
 
@@ -91,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T13:09:04.653Z
-Stopped at: Completed 01-secure-foundation plan 04 (Wave 3 use cases and entitlement provider)
+Last session: 2026-03-07T13:18:58.764Z
+Stopped at: Completed 01-secure-foundation plan 05 (Wave 4 profile CRUD UI)
 Resume file: None
