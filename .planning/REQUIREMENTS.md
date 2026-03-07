@@ -46,6 +46,16 @@
 - [ ] **IAP-03**: Paywall screen clearly communicates what is unlocked by upgrading
 - [ ] **IAP-04**: User can restore a previous purchase on reinstall or new device
 
+### Telemetry
+
+- [ ] **TELE-01**: App integrates an analytics SDK (PostHog or Firebase Analytics) that sends no personal or profile data — only anonymous behavioral events
+- [ ] **TELE-02**: App tracks which profile field types (built-in and custom field labels) are most frequently included in autofill fill responses
+- [ ] **TELE-03**: App tracks autofill session events: fill triggered, fill completed, fill abandoned
+- [ ] **TELE-04**: App tracks conversion funnel events: profile cap reached, paywall shown, purchase initiated, purchase completed
+- [ ] **TELE-05**: App tracks manual field correction events to signal heuristic accuracy over time
+- [ ] **TELE-06**: Onboarding discloses that anonymous usage analytics are collected and enabled by default
+- [ ] **TELE-07**: User can disable analytics collection in app settings (opt-out)
+
 ## v2 Requirements
 
 ### Security
@@ -87,6 +97,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PROF-04 | Phase 1 | Pending |
 | PROF-05 | Phase 1 | Pending |
 | PROF-06 | Phase 1 | Pending |
+| PROF-07 | Phase 1 | Pending |
+| PROF-08 | Phase 1 | Pending |
+| PROF-09 | Phase 1 | Pending |
 | SEC-01 | Phase 2 | Pending |
 | SEC-02 | Phase 2 | Pending |
 | SEC-03 | Phase 2 | Pending |
@@ -103,12 +116,19 @@ Which phases cover which requirements. Updated during roadmap creation.
 | IAP-02 | Phase 4 | Pending |
 | IAP-03 | Phase 4 | Pending |
 | IAP-04 | Phase 4 | Pending |
+| TELE-01 | Phase 5 | Pending |
+| TELE-02 | Phase 5 | Pending |
+| TELE-03 | Phase 5 | Pending |
+| TELE-04 | Phase 5 | Pending |
+| TELE-05 | Phase 5 | Pending |
+| TELE-06 | Phase 5 | Pending |
+| TELE-07 | Phase 5 | Pending |
 
 **Coverage:**
-- v1 requirements: 26 total
-- Mapped to phases: 23
-- Unmapped: 3 (PROF-07, PROF-08, PROF-09 — to be mapped during roadmap creation) ⚠️
+- v1 requirements: 33 total
+- Mapped to phases: 33
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-06*
-*Last updated: 2026-03-06 after initial definition*
+*Last updated: 2026-03-06 after adding telemetry requirements — all 33 v1 requirements mapped*
