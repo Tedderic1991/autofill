@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-secure-foundation plan 02 (Wave 1 encrypted DB foundation)
-last_updated: "2026-03-07T12:52:51.619Z"
+stopped_at: Completed 01-secure-foundation plan 03 (Wave 2 domain layer, DAOs, repositories)
+last_updated: "2026-03-07T13:03:21.767Z"
 last_activity: 2026-03-06 — Roadmap created
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 7
-  completed_plans: 2
+  completed_plans: 3
   percent: 0
 ---
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01-secure-foundation P01 | 2 | 2 tasks | 11 files |
 | Phase 01-secure-foundation P02 | 6 | 2 tasks | 11 files |
+| Phase 01-secure-foundation P03 | 8min | 2 tasks | 19 files |
 
 ## Accumulated Context
 
@@ -71,6 +72,9 @@ Recent decisions affecting current work:
 - [Phase 01-secure-foundation]: sqflite_sqlcipher removed; drift 2.32 + sqlite3mc hooks used for encryption (deprecated package replaced)
 - [Phase 01-secure-foundation]: app_database.g.dart hand-authored (no Flutter SDK on execution machine); must be regenerated with build_runner when SDK available
 - [Phase 01-secure-foundation]: openEncryptedDatabase() top-level function in app_database.dart for Riverpod injection; PRAGMA cipher assertion guards against silent unencrypted opens
+- [Phase 01-secure-foundation]: Import alias 'domain.CustomField' resolves name collision between Drift-generated row type and freezed domain model — used in CustomFieldRepositoryImpl
+- [Phase 01-secure-foundation]: getActiveWithFields() returns base profiles only in Plan 03; custom field join delegated to use-case layer in Plan 04
+- [Phase 01-secure-foundation]: path and path_provider added to pubspec.yaml (required by database_provider.dart for getApplicationDocumentsDirectory and p.join)
 
 ### Pending Todos
 
@@ -83,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T12:52:51.616Z
-Stopped at: Completed 01-secure-foundation plan 02 (Wave 1 encrypted DB foundation)
+Last session: 2026-03-07T13:03:13.033Z
+Stopped at: Completed 01-secure-foundation plan 03 (Wave 2 domain layer, DAOs, repositories)
 Resume file: None
