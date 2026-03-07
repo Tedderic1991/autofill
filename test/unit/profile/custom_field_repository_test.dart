@@ -9,7 +9,7 @@ import 'package:autofill/data/database/app_database.dart';
 import 'package:autofill/data/database/tables/custom_fields_table.dart';
 import 'package:autofill/data/database/tables/profiles_table.dart';
 import 'package:autofill/data/repositories/custom_field_repository_impl.dart';
-import 'package:autofill/domain/models/custom_field.dart';
+import 'package:autofill/domain/models/custom_field.dart' as domain;
 import 'package:autofill/domain/models/profile.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -43,14 +43,14 @@ void main() {
       await db.close();
     });
 
-    CustomField _makeField({
+    domain.CustomField _makeField({
       String id = 'aaaaaaaa-aaaa-aaaa-aaaa-000000000001',
       String label = 'Insurance #',
       CustomFieldType type = CustomFieldType.text,
       String? value,
     }) {
       final now = DateTime.now().toUtc();
-      return CustomField(
+      return domain.CustomField(
         id: id,
         profileId: profileId,
         label: label,
