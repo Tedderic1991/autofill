@@ -2,124 +2,164 @@
 
 part of 'database_provider.dart';
 
-// ignore_for_file: type=lint
-// **************************************************************************
-// NOTE: This file was hand-authored because build_runner cannot run in the
-// current environment (Flutter/Dart SDK not installed). When Flutter SDK is
-// available, regenerate by running:
-//   flutter pub run build_runner build --delete-conflicting-outputs
-// **************************************************************************
-
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-/// See also [appDatabase].
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+/// Riverpod provider for the encrypted [AppDatabase].
+///
+/// Opens the database exactly once per app session (keepAlive: true).
+/// Retrieves the encryption key from Android Keystore via [KeyManager]
+/// before calling [openEncryptedDatabase].
+///
+/// On widget disposal, the database is closed via [ref.onDispose].
+
 @ProviderFor(appDatabase)
-const appDatabaseProvider = AppDatabaseProvider._();
+final appDatabaseProvider = AppDatabaseProvider._();
 
-/// See also [appDatabase].
-class AppDatabaseProvider
-    extends AsyncNotifierProviderImpl<AppDatabaseNotifier, AppDatabase> {
-  const AppDatabaseProvider._()
+/// Riverpod provider for the encrypted [AppDatabase].
+///
+/// Opens the database exactly once per app session (keepAlive: true).
+/// Retrieves the encryption key from Android Keystore via [KeyManager]
+/// before calling [openEncryptedDatabase].
+///
+/// On widget disposal, the database is closed via [ref.onDispose].
+
+final class AppDatabaseProvider extends $FunctionalProvider<
+        AsyncValue<AppDatabase>, AppDatabase, FutureOr<AppDatabase>>
+    with $FutureModifier<AppDatabase>, $FutureProvider<AppDatabase> {
+  /// Riverpod provider for the encrypted [AppDatabase].
+  ///
+  /// Opens the database exactly once per app session (keepAlive: true).
+  /// Retrieves the encryption key from Android Keystore via [KeyManager]
+  /// before calling [openEncryptedDatabase].
+  ///
+  /// On widget disposal, the database is closed via [ref.onDispose].
+  AppDatabaseProvider._()
       : super(
-          () => AppDatabaseNotifier(),
           from: null,
           argument: null,
-          dependencies: null,
-          allTransitiveDependencies: null,
-          debugGetCreateSourceHash: null,
+          retry: null,
           name: r'appDatabaseProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
         );
 
   @override
-  bool runNotifierBuildWhenUserNotifierProviderIsUsed(
-      AsyncNotifierProviderRef<AppDatabase> ref) {
-    return true;
-  }
-}
+  String debugGetCreateSourceHash() => _$appDatabaseHash();
 
-/// See also [appDatabase].
-class AppDatabaseNotifier extends BuildlessAsyncNotifier<AppDatabase> {
-  late final Ref _ref;
+  @$internal
+  @override
+  $FutureProviderElement<AppDatabase> $createElement(
+          $ProviderPointer pointer) =>
+      $FutureProviderElement(pointer);
 
   @override
-  FutureOr<AppDatabase> build() {
-    _ref = ref;
-    return appDatabase(_ref);
+  FutureOr<AppDatabase> create(Ref ref) {
+    return appDatabase(ref);
   }
 }
 
-/// See also [profileRepository].
+String _$appDatabaseHash() => r'875675436f6f3c7f865137ea8bf4fd0ecb43127f';
+
+/// Riverpod provider for [ProfileRepository].
+///
+/// Depends on [appDatabaseProvider]. keepAlive matches the DB lifetime.
+
 @ProviderFor(profileRepository)
-const profileRepositoryProvider = ProfileRepositoryProvider._();
+final profileRepositoryProvider = ProfileRepositoryProvider._();
 
-/// See also [profileRepository].
-class ProfileRepositoryProvider extends AsyncNotifierProviderImpl<
-    ProfileRepositoryNotifier, ProfileRepository> {
-  const ProfileRepositoryProvider._()
+/// Riverpod provider for [ProfileRepository].
+///
+/// Depends on [appDatabaseProvider]. keepAlive matches the DB lifetime.
+
+final class ProfileRepositoryProvider extends $FunctionalProvider<
+        AsyncValue<ProfileRepository>,
+        ProfileRepository,
+        FutureOr<ProfileRepository>>
+    with
+        $FutureModifier<ProfileRepository>,
+        $FutureProvider<ProfileRepository> {
+  /// Riverpod provider for [ProfileRepository].
+  ///
+  /// Depends on [appDatabaseProvider]. keepAlive matches the DB lifetime.
+  ProfileRepositoryProvider._()
       : super(
-          () => ProfileRepositoryNotifier(),
           from: null,
           argument: null,
-          dependencies: null,
-          allTransitiveDependencies: null,
-          debugGetCreateSourceHash: null,
+          retry: null,
           name: r'profileRepositoryProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
         );
 
   @override
-  bool runNotifierBuildWhenUserNotifierProviderIsUsed(
-      AsyncNotifierProviderRef<ProfileRepository> ref) {
-    return true;
-  }
-}
+  String debugGetCreateSourceHash() => _$profileRepositoryHash();
 
-/// See also [profileRepository].
-class ProfileRepositoryNotifier
-    extends BuildlessAsyncNotifier<ProfileRepository> {
-  late final Ref _ref;
+  @$internal
+  @override
+  $FutureProviderElement<ProfileRepository> $createElement(
+          $ProviderPointer pointer) =>
+      $FutureProviderElement(pointer);
 
   @override
-  FutureOr<ProfileRepository> build() {
-    _ref = ref;
-    return profileRepository(_ref);
+  FutureOr<ProfileRepository> create(Ref ref) {
+    return profileRepository(ref);
   }
 }
 
-/// See also [customFieldRepository].
-@ProviderFor(customFieldRepository)
-const customFieldRepositoryProvider = CustomFieldRepositoryProvider._();
+String _$profileRepositoryHash() => r'bc70640d66e9f9fbbab762920a1aff258a0ce5fa';
 
-/// See also [customFieldRepository].
-class CustomFieldRepositoryProvider extends AsyncNotifierProviderImpl<
-    CustomFieldRepositoryNotifier, CustomFieldRepository> {
-  const CustomFieldRepositoryProvider._()
+/// Riverpod provider for [CustomFieldRepository].
+///
+/// Depends on [appDatabaseProvider]. keepAlive matches the DB lifetime.
+
+@ProviderFor(customFieldRepository)
+final customFieldRepositoryProvider = CustomFieldRepositoryProvider._();
+
+/// Riverpod provider for [CustomFieldRepository].
+///
+/// Depends on [appDatabaseProvider]. keepAlive matches the DB lifetime.
+
+final class CustomFieldRepositoryProvider extends $FunctionalProvider<
+        AsyncValue<CustomFieldRepository>,
+        CustomFieldRepository,
+        FutureOr<CustomFieldRepository>>
+    with
+        $FutureModifier<CustomFieldRepository>,
+        $FutureProvider<CustomFieldRepository> {
+  /// Riverpod provider for [CustomFieldRepository].
+  ///
+  /// Depends on [appDatabaseProvider]. keepAlive matches the DB lifetime.
+  CustomFieldRepositoryProvider._()
       : super(
-          () => CustomFieldRepositoryNotifier(),
           from: null,
           argument: null,
-          dependencies: null,
-          allTransitiveDependencies: null,
-          debugGetCreateSourceHash: null,
+          retry: null,
           name: r'customFieldRepositoryProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
         );
 
   @override
-  bool runNotifierBuildWhenUserNotifierProviderIsUsed(
-      AsyncNotifierProviderRef<CustomFieldRepository> ref) {
-    return true;
-  }
-}
+  String debugGetCreateSourceHash() => _$customFieldRepositoryHash();
 
-/// See also [customFieldRepository].
-class CustomFieldRepositoryNotifier
-    extends BuildlessAsyncNotifier<CustomFieldRepository> {
-  late final Ref _ref;
+  @$internal
+  @override
+  $FutureProviderElement<CustomFieldRepository> $createElement(
+          $ProviderPointer pointer) =>
+      $FutureProviderElement(pointer);
 
   @override
-  FutureOr<CustomFieldRepository> build() {
-    _ref = ref;
-    return customFieldRepository(_ref);
+  FutureOr<CustomFieldRepository> create(Ref ref) {
+    return customFieldRepository(ref);
   }
 }
+
+String _$customFieldRepositoryHash() =>
+    r'19e637b5ff41c23aa25ab9a3698ef79e89543200';

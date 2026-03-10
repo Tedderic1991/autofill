@@ -1,10 +1,11 @@
 // Drift AppDatabase — encrypted SQLite database for the autofill app.
 //
 // Encryption strategy:
-// - sqlite3mc (SQLite3MultipleCiphers) is bundled by drift_flutter ^0.3.0
+// - SQLCipher is provided by sqlcipher_flutter_libs.
 // - The NativeDatabase setup callback runs synchronously before any table
-//   access; it verifies cipher is loaded and sets the PRAGMA key.
+//   access; it verifies SQLCipher is loaded and sets the PRAGMA key.
 // - The passphrase comes from KeyManager (flutter_secure_storage + Keystore).
+// - SQLCipher is initialised once in main.dart via open.overrideFor.
 //
 // Source: drift.simonbinder.eu/platforms/encryption/
 //        drift.simonbinder.eu/dart_api/
@@ -12,7 +13,6 @@ import 'dart:io';
 
 import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
-import 'package:sqlite3/sqlite3.dart';
 
 import 'daos/custom_fields_dao.dart';
 import 'daos/profiles_dao.dart';
@@ -22,16 +22,15 @@ import 'tables/profiles_table.dart';
 // Drift generates _$AppDatabase into this file via build_runner.
 part 'app_database.g.dart';
 
-/// Opens an encrypted SQLite database file using SQLite3MultipleCiphers.
+/// Opens an encrypted SQLite database file using SQLCipher.
 ///
 /// The [passphrase] should be the base64url-encoded 32-byte key returned by
 /// [KeyManager.getOrCreateKey()]. It is passed to PRAGMA key before any
 /// table access.
 ///
-/// The setup callback asserts that `PRAGMA cipher;` returns a non-empty
-/// result, which confirms that sqlite3mc (not plain sqlite3) is loaded.
-/// This assertion runs in debug builds only — in release builds, a missing
-/// cipher would silently open an unencrypted database.
+/// The setup callback asserts that `PRAGMA cipher_version;` returns a
+/// non-empty result, confirming that SQLCipher (not plain sqlite3) is loaded.
+/// This assertion runs in debug builds only.
 ///
 /// Usage (via Riverpod in lib/providers/database_provider.dart):
 /// ```dart
@@ -39,17 +38,14 @@ part 'app_database.g.dart';
 /// final db = AppDatabase(openEncryptedDatabase(passphrase, dbFile));
 /// ```
 QueryExecutor openEncryptedDatabase(String passphrase, File dbFile) {
-  return NativeDatabase.createInBackground(
+  return NativeDatabase(
     dbFile,
     setup: (rawDb) {
-      // Verify SQLite3MultipleCiphers is loaded, not plain sqlite3.
-      // If the hooks configuration in pubspec.yaml is incorrect, this
-      // assertion will catch it at development time.
+      // Verify SQLCipher is loaded, not plain sqlite3.
       assert(
-        rawDb.select('PRAGMA cipher;').isNotEmpty,
-        'SQLite3MultipleCiphers not loaded — encryption unavailable. '
-        'Check the sqlite3mc hooks configuration in pubspec.yaml. '
-        'See: drift.simonbinder.eu/platforms/encryption/',
+        rawDb.select('PRAGMA cipher_version;').isNotEmpty,
+        'SQLCipher not loaded — encryption unavailable. '
+        'Check the sqlcipher_flutter_libs dependency in pubspec.yaml.',
       );
 
       // Escape single quotes in the passphrase to prevent SQL injection.

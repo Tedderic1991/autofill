@@ -21,7 +21,7 @@ part 'profile.freezed.dart';
 /// All fields mirror [Profiles] Drift table columns.
 /// Obtain instances via [ProfileRepository].
 @freezed
-class FamilyProfile with _$FamilyProfile {
+abstract class FamilyProfile with _$FamilyProfile {
   const factory FamilyProfile({
     required String id,
     required String displayName,
@@ -50,7 +50,7 @@ class FamilyProfile with _$FamilyProfile {
 /// Only user-supplied fields — id, createdAt, updatedAt, synchronized are
 /// assigned by the repository layer.
 @freezed
-class ProfileCreateRequest with _$ProfileCreateRequest {
+abstract class ProfileCreateRequest with _$ProfileCreateRequest {
   const factory ProfileCreateRequest({
     required String displayName,
     String? dateOfBirth,
@@ -74,7 +74,7 @@ class ProfileCreateRequest with _$ProfileCreateRequest {
 /// All mutable user-facing fields are optional (Value<T>-style or nullable).
 /// The repository sets updatedAt = DateTime.now() on every update.
 @freezed
-class ProfileUpdateRequest with _$ProfileUpdateRequest {
+abstract class ProfileUpdateRequest with _$ProfileUpdateRequest {
   const factory ProfileUpdateRequest({
     required String id,
     String? displayName,

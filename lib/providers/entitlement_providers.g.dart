@@ -2,44 +2,65 @@
 
 part of 'entitlement_providers.dart';
 
-// ignore_for_file: type=lint
-// **************************************************************************
-// NOTE: This file was hand-authored because build_runner cannot run in the
-// current environment (Flutter/Dart SDK not installed). When Flutter SDK is
-// available, regenerate by running:
-//   flutter pub run build_runner build --delete-conflicting-outputs
-// **************************************************************************
-
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-/// See also [entitlementTier].
-@ProviderFor(entitlementTier)
-const entitlementTierProvider = EntitlementTierProvider._();
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+/// Phase 1 stub — always returns [EntitlementTier.free].
+///
+/// Phase 4 replaces this with a real RevenueCat-backed implementation
+/// using Riverpod's [ProviderContainer.overrideWith]. No other code
+/// needs to change when Phase 4 lands.
 
-/// See also [entitlementTier].
-class EntitlementTierProvider
-    extends NotifierProviderImpl<EntitlementTierNotifier, EntitlementTier> {
-  const EntitlementTierProvider._()
+@ProviderFor(entitlementTier)
+final entitlementTierProvider = EntitlementTierProvider._();
+
+/// Phase 1 stub — always returns [EntitlementTier.free].
+///
+/// Phase 4 replaces this with a real RevenueCat-backed implementation
+/// using Riverpod's [ProviderContainer.overrideWith]. No other code
+/// needs to change when Phase 4 lands.
+
+final class EntitlementTierProvider extends $FunctionalProvider<EntitlementTier,
+    EntitlementTier, EntitlementTier> with $Provider<EntitlementTier> {
+  /// Phase 1 stub — always returns [EntitlementTier.free].
+  ///
+  /// Phase 4 replaces this with a real RevenueCat-backed implementation
+  /// using Riverpod's [ProviderContainer.overrideWith]. No other code
+  /// needs to change when Phase 4 lands.
+  EntitlementTierProvider._()
       : super(
-          () => EntitlementTierNotifier(),
           from: null,
           argument: null,
-          dependencies: null,
-          allTransitiveDependencies: null,
-          debugGetCreateSourceHash: null,
+          retry: null,
           name: r'entitlementTierProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
         );
-}
-
-/// See also [entitlementTier].
-class EntitlementTierNotifier extends BuildlessNotifier<EntitlementTier> {
-  late final Ref _ref;
 
   @override
-  EntitlementTier build() {
-    _ref = ref;
-    return entitlementTier(_ref);
+  String debugGetCreateSourceHash() => _$entitlementTierHash();
+
+  @$internal
+  @override
+  $ProviderElement<EntitlementTier> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  EntitlementTier create(Ref ref) {
+    return entitlementTier(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(EntitlementTier value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<EntitlementTier>(value),
+    );
   }
 }
+
+String _$entitlementTierHash() => r'67261ccdd8cbd9f4162f63d5bc797b87a0befbd2';

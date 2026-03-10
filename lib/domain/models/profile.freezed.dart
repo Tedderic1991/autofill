@@ -1,13 +1,7 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
-// **************************************************************************
-// NOTE: This file was hand-authored because build_runner cannot run in the
-// current environment (Flutter/Dart SDK not installed). When Flutter SDK is
-// available, regenerate by running:
-//   flutter pub run build_runner build --delete-conflicting-outputs
-// **************************************************************************
 
 part of 'profile.dart';
 
@@ -15,199 +9,148 @@ part of 'profile.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FamilyProfile {
-  String get id => throw _privateConstructorUsedError;
-  String get displayName => throw _privateConstructorUsedError;
-  String? get dateOfBirth => throw _privateConstructorUsedError;
-  String? get addressLine1 => throw _privateConstructorUsedError;
-  String? get addressLine2 => throw _privateConstructorUsedError;
-  String? get city => throw _privateConstructorUsedError;
-  String? get stateProvince => throw _privateConstructorUsedError;
-  String? get postalCode => throw _privateConstructorUsedError;
-  String? get country => throw _privateConstructorUsedError;
-  String? get phone => throw _privateConstructorUsedError;
-  String? get allergies => throw _privateConstructorUsedError;
-  String? get emergencyContactName => throw _privateConstructorUsedError;
-  String? get emergencyContactPhone => throw _privateConstructorUsedError;
-  RelationshipTag get relationshipTag => throw _privateConstructorUsedError;
-  String? get avatarPath => throw _privateConstructorUsedError;
-  DateTime get createdAt => throw _privateConstructorUsedError;
-  DateTime get updatedAt => throw _privateConstructorUsedError;
-  DateTime? get deletedAt => throw _privateConstructorUsedError;
-  bool get synchronized => throw _privateConstructorUsedError;
+  String get id;
+  String get displayName;
+  String? get dateOfBirth;
+  String? get addressLine1;
+  String? get addressLine2;
+  String? get city;
+  String? get stateProvince;
+  String? get postalCode;
+  String? get country;
+  String? get phone;
+  String? get allergies;
+  String? get emergencyContactName;
+  String? get emergencyContactPhone;
+  RelationshipTag get relationshipTag;
+  String? get avatarPath;
+  DateTime get createdAt;
+  DateTime get updatedAt;
+  DateTime? get deletedAt;
+  bool get synchronized;
 
-  @JsonKey(ignore: true)
-  $FamilyProfileCopyWith<FamilyProfile> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FamilyProfileCopyWith<$Res> {
-  factory $FamilyProfileCopyWith(
-          FamilyProfile value, $Res Function(FamilyProfile) then) =
-      _$FamilyProfileCopyWithImpl<$Res, FamilyProfile>;
-  @useResult
-  $Res call({
-    String id,
-    String displayName,
-    String? dateOfBirth,
-    String? addressLine1,
-    String? addressLine2,
-    String? city,
-    String? stateProvince,
-    String? postalCode,
-    String? country,
-    String? phone,
-    String? allergies,
-    String? emergencyContactName,
-    String? emergencyContactPhone,
-    RelationshipTag relationshipTag,
-    String? avatarPath,
-    DateTime createdAt,
-    DateTime updatedAt,
-    DateTime? deletedAt,
-    bool synchronized,
-  });
-}
-
-/// @nodoc
-class _$FamilyProfileCopyWithImpl<$Res, $Val extends FamilyProfile>
-    implements $FamilyProfileCopyWith<$Res> {
-  _$FamilyProfileCopyWithImpl(this._value, this._then);
-
-  final $Val _value;
-  final $Res Function($Val) _then;
-
+  /// Create a copy of FamilyProfile
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $FamilyProfileCopyWith<FamilyProfile> get copyWith =>
+      _$FamilyProfileCopyWithImpl<FamilyProfile>(
+          this as FamilyProfile, _$identity);
+
   @override
-  $Res call({
-    Object? id = null,
-    Object? displayName = null,
-    Object? dateOfBirth = freezed,
-    Object? addressLine1 = freezed,
-    Object? addressLine2 = freezed,
-    Object? city = freezed,
-    Object? stateProvince = freezed,
-    Object? postalCode = freezed,
-    Object? country = freezed,
-    Object? phone = freezed,
-    Object? allergies = freezed,
-    Object? emergencyContactName = freezed,
-    Object? emergencyContactPhone = freezed,
-    Object? relationshipTag = null,
-    Object? avatarPath = freezed,
-    Object? createdAt = null,
-    Object? updatedAt = null,
-    Object? deletedAt = freezed,
-    Object? synchronized = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id as String,
-      displayName: null == displayName
-          ? _value.displayName
-          : displayName as String,
-      dateOfBirth: freezed == dateOfBirth
-          ? _value.dateOfBirth
-          : dateOfBirth as String?,
-      addressLine1: freezed == addressLine1
-          ? _value.addressLine1
-          : addressLine1 as String?,
-      addressLine2: freezed == addressLine2
-          ? _value.addressLine2
-          : addressLine2 as String?,
-      city: freezed == city
-          ? _value.city
-          : city as String?,
-      stateProvince: freezed == stateProvince
-          ? _value.stateProvince
-          : stateProvince as String?,
-      postalCode: freezed == postalCode
-          ? _value.postalCode
-          : postalCode as String?,
-      country: freezed == country
-          ? _value.country
-          : country as String?,
-      phone: freezed == phone
-          ? _value.phone
-          : phone as String?,
-      allergies: freezed == allergies
-          ? _value.allergies
-          : allergies as String?,
-      emergencyContactName: freezed == emergencyContactName
-          ? _value.emergencyContactName
-          : emergencyContactName as String?,
-      emergencyContactPhone: freezed == emergencyContactPhone
-          ? _value.emergencyContactPhone
-          : emergencyContactPhone as String?,
-      relationshipTag: null == relationshipTag
-          ? _value.relationshipTag
-          : relationshipTag as RelationshipTag,
-      avatarPath: freezed == avatarPath
-          ? _value.avatarPath
-          : avatarPath as String?,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt as DateTime,
-      updatedAt: null == updatedAt
-          ? _value.updatedAt
-          : updatedAt as DateTime,
-      deletedAt: freezed == deletedAt
-          ? _value.deletedAt
-          : deletedAt as DateTime?,
-      synchronized: null == synchronized
-          ? _value.synchronized
-          : synchronized as bool,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is FamilyProfile &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.displayName, displayName) ||
+                other.displayName == displayName) &&
+            (identical(other.dateOfBirth, dateOfBirth) ||
+                other.dateOfBirth == dateOfBirth) &&
+            (identical(other.addressLine1, addressLine1) ||
+                other.addressLine1 == addressLine1) &&
+            (identical(other.addressLine2, addressLine2) ||
+                other.addressLine2 == addressLine2) &&
+            (identical(other.city, city) || other.city == city) &&
+            (identical(other.stateProvince, stateProvince) ||
+                other.stateProvince == stateProvince) &&
+            (identical(other.postalCode, postalCode) ||
+                other.postalCode == postalCode) &&
+            (identical(other.country, country) || other.country == country) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.allergies, allergies) ||
+                other.allergies == allergies) &&
+            (identical(other.emergencyContactName, emergencyContactName) ||
+                other.emergencyContactName == emergencyContactName) &&
+            (identical(other.emergencyContactPhone, emergencyContactPhone) ||
+                other.emergencyContactPhone == emergencyContactPhone) &&
+            (identical(other.relationshipTag, relationshipTag) ||
+                other.relationshipTag == relationshipTag) &&
+            (identical(other.avatarPath, avatarPath) ||
+                other.avatarPath == avatarPath) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.synchronized, synchronized) ||
+                other.synchronized == synchronized));
+  }
+
+  @override
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        id,
+        displayName,
+        dateOfBirth,
+        addressLine1,
+        addressLine2,
+        city,
+        stateProvince,
+        postalCode,
+        country,
+        phone,
+        allergies,
+        emergencyContactName,
+        emergencyContactPhone,
+        relationshipTag,
+        avatarPath,
+        createdAt,
+        updatedAt,
+        deletedAt,
+        synchronized
+      ]);
+
+  @override
+  String toString() {
+    return 'FamilyProfile(id: $id, displayName: $displayName, dateOfBirth: $dateOfBirth, addressLine1: $addressLine1, addressLine2: $addressLine2, city: $city, stateProvince: $stateProvince, postalCode: $postalCode, country: $country, phone: $phone, allergies: $allergies, emergencyContactName: $emergencyContactName, emergencyContactPhone: $emergencyContactPhone, relationshipTag: $relationshipTag, avatarPath: $avatarPath, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, synchronized: $synchronized)';
   }
 }
 
 /// @nodoc
-abstract class _$$FamilyProfileImplCopyWith<$Res>
-    implements $FamilyProfileCopyWith<$Res> {
-  factory _$$FamilyProfileImplCopyWith(
-          _$FamilyProfileImpl value, $Res Function(_$FamilyProfileImpl) then) =
-      __$$FamilyProfileImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $FamilyProfileCopyWith<$Res> {
+  factory $FamilyProfileCopyWith(
+          FamilyProfile value, $Res Function(FamilyProfile) _then) =
+      _$FamilyProfileCopyWithImpl;
   @useResult
-  $Res call({
-    String id,
-    String displayName,
-    String? dateOfBirth,
-    String? addressLine1,
-    String? addressLine2,
-    String? city,
-    String? stateProvince,
-    String? postalCode,
-    String? country,
-    String? phone,
-    String? allergies,
-    String? emergencyContactName,
-    String? emergencyContactPhone,
-    RelationshipTag relationshipTag,
-    String? avatarPath,
-    DateTime createdAt,
-    DateTime updatedAt,
-    DateTime? deletedAt,
-    bool synchronized,
-  });
+  $Res call(
+      {String id,
+      String displayName,
+      String? dateOfBirth,
+      String? addressLine1,
+      String? addressLine2,
+      String? city,
+      String? stateProvince,
+      String? postalCode,
+      String? country,
+      String? phone,
+      String? allergies,
+      String? emergencyContactName,
+      String? emergencyContactPhone,
+      RelationshipTag relationshipTag,
+      String? avatarPath,
+      DateTime createdAt,
+      DateTime updatedAt,
+      DateTime? deletedAt,
+      bool synchronized});
 }
 
 /// @nodoc
-class __$$FamilyProfileImplCopyWithImpl<$Res>
-    extends _$FamilyProfileCopyWithImpl<$Res, _$FamilyProfileImpl>
-    implements _$$FamilyProfileImplCopyWith<$Res> {
-  __$$FamilyProfileImplCopyWithImpl(
-      _$FamilyProfileImpl _value, $Res Function(_$FamilyProfileImpl) _then)
-      : super(_value, _then);
+class _$FamilyProfileCopyWithImpl<$Res>
+    implements $FamilyProfileCopyWith<$Res> {
+  _$FamilyProfileCopyWithImpl(this._self, this._then);
 
+  final FamilyProfile _self;
+  final $Res Function(FamilyProfile) _then;
+
+  /// Create a copy of FamilyProfile
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -231,92 +174,384 @@ class __$$FamilyProfileImplCopyWithImpl<$Res>
     Object? deletedAt = freezed,
     Object? synchronized = null,
   }) {
-    return _then(_$FamilyProfileImpl(
+    return _then(_self.copyWith(
       id: null == id
-          ? _value.id
-          : id as String,
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
       displayName: null == displayName
-          ? _value.displayName
-          : displayName as String,
+          ? _self.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
       dateOfBirth: freezed == dateOfBirth
-          ? _value.dateOfBirth
-          : dateOfBirth as String?,
+          ? _self.dateOfBirth
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as String?,
       addressLine1: freezed == addressLine1
-          ? _value.addressLine1
-          : addressLine1 as String?,
+          ? _self.addressLine1
+          : addressLine1 // ignore: cast_nullable_to_non_nullable
+              as String?,
       addressLine2: freezed == addressLine2
-          ? _value.addressLine2
-          : addressLine2 as String?,
+          ? _self.addressLine2
+          : addressLine2 // ignore: cast_nullable_to_non_nullable
+              as String?,
       city: freezed == city
-          ? _value.city
-          : city as String?,
+          ? _self.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
       stateProvince: freezed == stateProvince
-          ? _value.stateProvince
-          : stateProvince as String?,
+          ? _self.stateProvince
+          : stateProvince // ignore: cast_nullable_to_non_nullable
+              as String?,
       postalCode: freezed == postalCode
-          ? _value.postalCode
-          : postalCode as String?,
+          ? _self.postalCode
+          : postalCode // ignore: cast_nullable_to_non_nullable
+              as String?,
       country: freezed == country
-          ? _value.country
-          : country as String?,
+          ? _self.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
       phone: freezed == phone
-          ? _value.phone
-          : phone as String?,
+          ? _self.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
       allergies: freezed == allergies
-          ? _value.allergies
-          : allergies as String?,
+          ? _self.allergies
+          : allergies // ignore: cast_nullable_to_non_nullable
+              as String?,
       emergencyContactName: freezed == emergencyContactName
-          ? _value.emergencyContactName
-          : emergencyContactName as String?,
+          ? _self.emergencyContactName
+          : emergencyContactName // ignore: cast_nullable_to_non_nullable
+              as String?,
       emergencyContactPhone: freezed == emergencyContactPhone
-          ? _value.emergencyContactPhone
-          : emergencyContactPhone as String?,
+          ? _self.emergencyContactPhone
+          : emergencyContactPhone // ignore: cast_nullable_to_non_nullable
+              as String?,
       relationshipTag: null == relationshipTag
-          ? _value.relationshipTag
-          : relationshipTag as RelationshipTag,
+          ? _self.relationshipTag
+          : relationshipTag // ignore: cast_nullable_to_non_nullable
+              as RelationshipTag,
       avatarPath: freezed == avatarPath
-          ? _value.avatarPath
-          : avatarPath as String?,
+          ? _self.avatarPath
+          : avatarPath // ignore: cast_nullable_to_non_nullable
+              as String?,
       createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt as DateTime,
+          ? _self.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
       updatedAt: null == updatedAt
-          ? _value.updatedAt
-          : updatedAt as DateTime,
+          ? _self.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
       deletedAt: freezed == deletedAt
-          ? _value.deletedAt
-          : deletedAt as DateTime?,
+          ? _self.deletedAt
+          : deletedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
       synchronized: null == synchronized
-          ? _value.synchronized
-          : synchronized as bool,
+          ? _self.synchronized
+          : synchronized // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
+/// Adds pattern-matching-related methods to [FamilyProfile].
+extension FamilyProfilePatterns on FamilyProfile {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FamilyProfile value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FamilyProfile() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FamilyProfile value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FamilyProfile():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FamilyProfile value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FamilyProfile() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            String id,
+            String displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag relationshipTag,
+            String? avatarPath,
+            DateTime createdAt,
+            DateTime updatedAt,
+            DateTime? deletedAt,
+            bool synchronized)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FamilyProfile() when $default != null:
+        return $default(
+            _that.id,
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath,
+            _that.createdAt,
+            _that.updatedAt,
+            _that.deletedAt,
+            _that.synchronized);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            String id,
+            String displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag relationshipTag,
+            String? avatarPath,
+            DateTime createdAt,
+            DateTime updatedAt,
+            DateTime? deletedAt,
+            bool synchronized)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FamilyProfile():
+        return $default(
+            _that.id,
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath,
+            _that.createdAt,
+            _that.updatedAt,
+            _that.deletedAt,
+            _that.synchronized);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            String id,
+            String displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag relationshipTag,
+            String? avatarPath,
+            DateTime createdAt,
+            DateTime updatedAt,
+            DateTime? deletedAt,
+            bool synchronized)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FamilyProfile() when $default != null:
+        return $default(
+            _that.id,
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath,
+            _that.createdAt,
+            _that.updatedAt,
+            _that.deletedAt,
+            _that.synchronized);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 
-class _$FamilyProfileImpl implements _FamilyProfile {
-  const _$FamilyProfileImpl({
-    required this.id,
-    required this.displayName,
-    this.dateOfBirth,
-    this.addressLine1,
-    this.addressLine2,
-    this.city,
-    this.stateProvince,
-    this.postalCode,
-    this.country,
-    this.phone,
-    this.allergies,
-    this.emergencyContactName,
-    this.emergencyContactPhone,
-    required this.relationshipTag,
-    this.avatarPath,
-    required this.createdAt,
-    required this.updatedAt,
-    this.deletedAt,
-    required this.synchronized,
-  });
+class _FamilyProfile implements FamilyProfile {
+  const _FamilyProfile(
+      {required this.id,
+      required this.displayName,
+      this.dateOfBirth,
+      this.addressLine1,
+      this.addressLine2,
+      this.city,
+      this.stateProvince,
+      this.postalCode,
+      this.country,
+      this.phone,
+      this.allergies,
+      this.emergencyContactName,
+      this.emergencyContactPhone,
+      required this.relationshipTag,
+      this.avatarPath,
+      required this.createdAt,
+      required this.updatedAt,
+      this.deletedAt,
+      required this.synchronized});
 
   @override
   final String id;
@@ -357,16 +592,19 @@ class _$FamilyProfileImpl implements _FamilyProfile {
   @override
   final bool synchronized;
 
+  /// Create a copy of FamilyProfile
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'FamilyProfile(id: $id, displayName: $displayName, dateOfBirth: $dateOfBirth, addressLine1: $addressLine1, addressLine2: $addressLine2, city: $city, stateProvince: $stateProvince, postalCode: $postalCode, country: $country, phone: $phone, allergies: $allergies, emergencyContactName: $emergencyContactName, emergencyContactPhone: $emergencyContactPhone, relationshipTag: $relationshipTag, avatarPath: $avatarPath, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, synchronized: $synchronized)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$FamilyProfileCopyWith<_FamilyProfile> get copyWith =>
+      __$FamilyProfileCopyWithImpl<_FamilyProfile>(this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FamilyProfileImpl &&
+            other is _FamilyProfile &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.displayName, displayName) ||
                 other.displayName == displayName) &&
@@ -404,9 +642,239 @@ class _$FamilyProfileImpl implements _FamilyProfile {
   }
 
   @override
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        id,
+        displayName,
+        dateOfBirth,
+        addressLine1,
+        addressLine2,
+        city,
+        stateProvince,
+        postalCode,
+        country,
+        phone,
+        allergies,
+        emergencyContactName,
+        emergencyContactPhone,
+        relationshipTag,
+        avatarPath,
+        createdAt,
+        updatedAt,
+        deletedAt,
+        synchronized
+      ]);
+
+  @override
+  String toString() {
+    return 'FamilyProfile(id: $id, displayName: $displayName, dateOfBirth: $dateOfBirth, addressLine1: $addressLine1, addressLine2: $addressLine2, city: $city, stateProvince: $stateProvince, postalCode: $postalCode, country: $country, phone: $phone, allergies: $allergies, emergencyContactName: $emergencyContactName, emergencyContactPhone: $emergencyContactPhone, relationshipTag: $relationshipTag, avatarPath: $avatarPath, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, synchronized: $synchronized)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$FamilyProfileCopyWith<$Res>
+    implements $FamilyProfileCopyWith<$Res> {
+  factory _$FamilyProfileCopyWith(
+          _FamilyProfile value, $Res Function(_FamilyProfile) _then) =
+      __$FamilyProfileCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String displayName,
+      String? dateOfBirth,
+      String? addressLine1,
+      String? addressLine2,
+      String? city,
+      String? stateProvince,
+      String? postalCode,
+      String? country,
+      String? phone,
+      String? allergies,
+      String? emergencyContactName,
+      String? emergencyContactPhone,
+      RelationshipTag relationshipTag,
+      String? avatarPath,
+      DateTime createdAt,
+      DateTime updatedAt,
+      DateTime? deletedAt,
+      bool synchronized});
+}
+
+/// @nodoc
+class __$FamilyProfileCopyWithImpl<$Res>
+    implements _$FamilyProfileCopyWith<$Res> {
+  __$FamilyProfileCopyWithImpl(this._self, this._then);
+
+  final _FamilyProfile _self;
+  final $Res Function(_FamilyProfile) _then;
+
+  /// Create a copy of FamilyProfile
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = null,
+    Object? displayName = null,
+    Object? dateOfBirth = freezed,
+    Object? addressLine1 = freezed,
+    Object? addressLine2 = freezed,
+    Object? city = freezed,
+    Object? stateProvince = freezed,
+    Object? postalCode = freezed,
+    Object? country = freezed,
+    Object? phone = freezed,
+    Object? allergies = freezed,
+    Object? emergencyContactName = freezed,
+    Object? emergencyContactPhone = freezed,
+    Object? relationshipTag = null,
+    Object? avatarPath = freezed,
+    Object? createdAt = null,
+    Object? updatedAt = null,
+    Object? deletedAt = freezed,
+    Object? synchronized = null,
+  }) {
+    return _then(_FamilyProfile(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: null == displayName
+          ? _self.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      dateOfBirth: freezed == dateOfBirth
+          ? _self.dateOfBirth
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine1: freezed == addressLine1
+          ? _self.addressLine1
+          : addressLine1 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine2: freezed == addressLine2
+          ? _self.addressLine2
+          : addressLine2 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      city: freezed == city
+          ? _self.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stateProvince: freezed == stateProvince
+          ? _self.stateProvince
+          : stateProvince // ignore: cast_nullable_to_non_nullable
+              as String?,
+      postalCode: freezed == postalCode
+          ? _self.postalCode
+          : postalCode // ignore: cast_nullable_to_non_nullable
+              as String?,
+      country: freezed == country
+          ? _self.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _self.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      allergies: freezed == allergies
+          ? _self.allergies
+          : allergies // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactName: freezed == emergencyContactName
+          ? _self.emergencyContactName
+          : emergencyContactName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactPhone: freezed == emergencyContactPhone
+          ? _self.emergencyContactPhone
+          : emergencyContactPhone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      relationshipTag: null == relationshipTag
+          ? _self.relationshipTag
+          : relationshipTag // ignore: cast_nullable_to_non_nullable
+              as RelationshipTag,
+      avatarPath: freezed == avatarPath
+          ? _self.avatarPath
+          : avatarPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      createdAt: null == createdAt
+          ? _self.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      updatedAt: null == updatedAt
+          ? _self.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      deletedAt: freezed == deletedAt
+          ? _self.deletedAt
+          : deletedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      synchronized: null == synchronized
+          ? _self.synchronized
+          : synchronized // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
+  }
+}
+
+/// @nodoc
+mixin _$ProfileCreateRequest {
+  String get displayName;
+  String? get dateOfBirth;
+  String? get addressLine1;
+  String? get addressLine2;
+  String? get city;
+  String? get stateProvince;
+  String? get postalCode;
+  String? get country;
+  String? get phone;
+  String? get allergies;
+  String? get emergencyContactName;
+  String? get emergencyContactPhone;
+  RelationshipTag get relationshipTag;
+  String? get avatarPath;
+
+  /// Create a copy of ProfileCreateRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $ProfileCreateRequestCopyWith<ProfileCreateRequest> get copyWith =>
+      _$ProfileCreateRequestCopyWithImpl<ProfileCreateRequest>(
+          this as ProfileCreateRequest, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ProfileCreateRequest &&
+            (identical(other.displayName, displayName) ||
+                other.displayName == displayName) &&
+            (identical(other.dateOfBirth, dateOfBirth) ||
+                other.dateOfBirth == dateOfBirth) &&
+            (identical(other.addressLine1, addressLine1) ||
+                other.addressLine1 == addressLine1) &&
+            (identical(other.addressLine2, addressLine2) ||
+                other.addressLine2 == addressLine2) &&
+            (identical(other.city, city) || other.city == city) &&
+            (identical(other.stateProvince, stateProvince) ||
+                other.stateProvince == stateProvince) &&
+            (identical(other.postalCode, postalCode) ||
+                other.postalCode == postalCode) &&
+            (identical(other.country, country) || other.country == country) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.allergies, allergies) ||
+                other.allergies == allergies) &&
+            (identical(other.emergencyContactName, emergencyContactName) ||
+                other.emergencyContactName == emergencyContactName) &&
+            (identical(other.emergencyContactPhone, emergencyContactPhone) ||
+                other.emergencyContactPhone == emergencyContactPhone) &&
+            (identical(other.relationshipTag, relationshipTag) ||
+                other.relationshipTag == relationshipTag) &&
+            (identical(other.avatarPath, avatarPath) ||
+                other.avatarPath == avatarPath));
+  }
+
+  @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
       displayName,
       dateOfBirth,
       addressLine1,
@@ -420,214 +888,47 @@ class _$FamilyProfileImpl implements _FamilyProfile {
       emergencyContactName,
       emergencyContactPhone,
       relationshipTag,
-      avatarPath,
-      createdAt,
-      updatedAt,
-      deletedAt,
-      synchronized);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FamilyProfileImplCopyWith<_$FamilyProfileImpl> get copyWith =>
-      __$$FamilyProfileImplCopyWithImpl<_$FamilyProfileImpl>(this, _$identity);
-}
-
-abstract class _FamilyProfile implements FamilyProfile {
-  const factory _FamilyProfile({
-    required final String id,
-    required final String displayName,
-    final String? dateOfBirth,
-    final String? addressLine1,
-    final String? addressLine2,
-    final String? city,
-    final String? stateProvince,
-    final String? postalCode,
-    final String? country,
-    final String? phone,
-    final String? allergies,
-    final String? emergencyContactName,
-    final String? emergencyContactPhone,
-    required final RelationshipTag relationshipTag,
-    final String? avatarPath,
-    required final DateTime createdAt,
-    required final DateTime updatedAt,
-    final DateTime? deletedAt,
-    required final bool synchronized,
-  }) = _$FamilyProfileImpl;
+      avatarPath);
 
   @override
-  String get id;
-  @override
-  String get displayName;
-  @override
-  String? get dateOfBirth;
-  @override
-  String? get addressLine1;
-  @override
-  String? get addressLine2;
-  @override
-  String? get city;
-  @override
-  String? get stateProvince;
-  @override
-  String? get postalCode;
-  @override
-  String? get country;
-  @override
-  String? get phone;
-  @override
-  String? get allergies;
-  @override
-  String? get emergencyContactName;
-  @override
-  String? get emergencyContactPhone;
-  @override
-  RelationshipTag get relationshipTag;
-  @override
-  String? get avatarPath;
-  @override
-  DateTime get createdAt;
-  @override
-  DateTime get updatedAt;
-  @override
-  DateTime? get deletedAt;
-  @override
-  bool get synchronized;
-  @override
-  @JsonKey(ignore: true)
-  _$$FamilyProfileImplCopyWith<_$FamilyProfileImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-// ---- ProfileCreateRequest ----
-
-/// @nodoc
-mixin _$ProfileCreateRequest {
-  String get displayName => throw _privateConstructorUsedError;
-  String? get dateOfBirth => throw _privateConstructorUsedError;
-  String? get addressLine1 => throw _privateConstructorUsedError;
-  String? get addressLine2 => throw _privateConstructorUsedError;
-  String? get city => throw _privateConstructorUsedError;
-  String? get stateProvince => throw _privateConstructorUsedError;
-  String? get postalCode => throw _privateConstructorUsedError;
-  String? get country => throw _privateConstructorUsedError;
-  String? get phone => throw _privateConstructorUsedError;
-  String? get allergies => throw _privateConstructorUsedError;
-  String? get emergencyContactName => throw _privateConstructorUsedError;
-  String? get emergencyContactPhone => throw _privateConstructorUsedError;
-  RelationshipTag get relationshipTag => throw _privateConstructorUsedError;
-  String? get avatarPath => throw _privateConstructorUsedError;
-
-  @JsonKey(ignore: true)
-  $ProfileCreateRequestCopyWith<ProfileCreateRequest> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ProfileCreateRequestCopyWith<$Res> {
-  factory $ProfileCreateRequestCopyWith(ProfileCreateRequest value,
-          $Res Function(ProfileCreateRequest) then) =
-      _$ProfileCreateRequestCopyWithImpl<$Res, ProfileCreateRequest>;
-  @useResult
-  $Res call({
-    String displayName,
-    String? dateOfBirth,
-    String? addressLine1,
-    String? addressLine2,
-    String? city,
-    String? stateProvince,
-    String? postalCode,
-    String? country,
-    String? phone,
-    String? allergies,
-    String? emergencyContactName,
-    String? emergencyContactPhone,
-    RelationshipTag relationshipTag,
-    String? avatarPath,
-  });
-}
-
-/// @nodoc
-class _$ProfileCreateRequestCopyWithImpl<$Res,
-        $Val extends ProfileCreateRequest>
-    implements $ProfileCreateRequestCopyWith<$Res> {
-  _$ProfileCreateRequestCopyWithImpl(this._value, this._then);
-
-  final $Val _value;
-  final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? displayName = null,
-    Object? dateOfBirth = freezed,
-    Object? addressLine1 = freezed,
-    Object? addressLine2 = freezed,
-    Object? city = freezed,
-    Object? stateProvince = freezed,
-    Object? postalCode = freezed,
-    Object? country = freezed,
-    Object? phone = freezed,
-    Object? allergies = freezed,
-    Object? emergencyContactName = freezed,
-    Object? emergencyContactPhone = freezed,
-    Object? relationshipTag = null,
-    Object? avatarPath = freezed,
-  }) {
-    return _then(_value.copyWith(
-      displayName: null == displayName ? _value.displayName : displayName as String,
-      dateOfBirth: freezed == dateOfBirth ? _value.dateOfBirth : dateOfBirth as String?,
-      addressLine1: freezed == addressLine1 ? _value.addressLine1 : addressLine1 as String?,
-      addressLine2: freezed == addressLine2 ? _value.addressLine2 : addressLine2 as String?,
-      city: freezed == city ? _value.city : city as String?,
-      stateProvince: freezed == stateProvince ? _value.stateProvince : stateProvince as String?,
-      postalCode: freezed == postalCode ? _value.postalCode : postalCode as String?,
-      country: freezed == country ? _value.country : country as String?,
-      phone: freezed == phone ? _value.phone : phone as String?,
-      allergies: freezed == allergies ? _value.allergies : allergies as String?,
-      emergencyContactName: freezed == emergencyContactName ? _value.emergencyContactName : emergencyContactName as String?,
-      emergencyContactPhone: freezed == emergencyContactPhone ? _value.emergencyContactPhone : emergencyContactPhone as String?,
-      relationshipTag: null == relationshipTag ? _value.relationshipTag : relationshipTag as RelationshipTag,
-      avatarPath: freezed == avatarPath ? _value.avatarPath : avatarPath as String?,
-    ) as $Val);
+  String toString() {
+    return 'ProfileCreateRequest(displayName: $displayName, dateOfBirth: $dateOfBirth, addressLine1: $addressLine1, addressLine2: $addressLine2, city: $city, stateProvince: $stateProvince, postalCode: $postalCode, country: $country, phone: $phone, allergies: $allergies, emergencyContactName: $emergencyContactName, emergencyContactPhone: $emergencyContactPhone, relationshipTag: $relationshipTag, avatarPath: $avatarPath)';
   }
 }
 
 /// @nodoc
-abstract class _$$ProfileCreateRequestImplCopyWith<$Res>
-    implements $ProfileCreateRequestCopyWith<$Res> {
-  factory _$$ProfileCreateRequestImplCopyWith(_$ProfileCreateRequestImpl value,
-          $Res Function(_$ProfileCreateRequestImpl) then) =
-      __$$ProfileCreateRequestImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ProfileCreateRequestCopyWith<$Res> {
+  factory $ProfileCreateRequestCopyWith(ProfileCreateRequest value,
+          $Res Function(ProfileCreateRequest) _then) =
+      _$ProfileCreateRequestCopyWithImpl;
   @useResult
-  $Res call({
-    String displayName,
-    String? dateOfBirth,
-    String? addressLine1,
-    String? addressLine2,
-    String? city,
-    String? stateProvince,
-    String? postalCode,
-    String? country,
-    String? phone,
-    String? allergies,
-    String? emergencyContactName,
-    String? emergencyContactPhone,
-    RelationshipTag relationshipTag,
-    String? avatarPath,
-  });
+  $Res call(
+      {String displayName,
+      String? dateOfBirth,
+      String? addressLine1,
+      String? addressLine2,
+      String? city,
+      String? stateProvince,
+      String? postalCode,
+      String? country,
+      String? phone,
+      String? allergies,
+      String? emergencyContactName,
+      String? emergencyContactPhone,
+      RelationshipTag relationshipTag,
+      String? avatarPath});
 }
 
 /// @nodoc
-class __$$ProfileCreateRequestImplCopyWithImpl<$Res>
-    extends _$ProfileCreateRequestCopyWithImpl<$Res, _$ProfileCreateRequestImpl>
-    implements _$$ProfileCreateRequestImplCopyWith<$Res> {
-  __$$ProfileCreateRequestImplCopyWithImpl(_$ProfileCreateRequestImpl _value,
-      $Res Function(_$ProfileCreateRequestImpl) _then)
-      : super(_value, _then);
+class _$ProfileCreateRequestCopyWithImpl<$Res>
+    implements $ProfileCreateRequestCopyWith<$Res> {
+  _$ProfileCreateRequestCopyWithImpl(this._self, this._then);
 
+  final ProfileCreateRequest _self;
+  final $Res Function(ProfileCreateRequest) _then;
+
+  /// Create a copy of ProfileCreateRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -646,43 +947,329 @@ class __$$ProfileCreateRequestImplCopyWithImpl<$Res>
     Object? relationshipTag = null,
     Object? avatarPath = freezed,
   }) {
-    return _then(_$ProfileCreateRequestImpl(
-      displayName: null == displayName ? _value.displayName : displayName as String,
-      dateOfBirth: freezed == dateOfBirth ? _value.dateOfBirth : dateOfBirth as String?,
-      addressLine1: freezed == addressLine1 ? _value.addressLine1 : addressLine1 as String?,
-      addressLine2: freezed == addressLine2 ? _value.addressLine2 : addressLine2 as String?,
-      city: freezed == city ? _value.city : city as String?,
-      stateProvince: freezed == stateProvince ? _value.stateProvince : stateProvince as String?,
-      postalCode: freezed == postalCode ? _value.postalCode : postalCode as String?,
-      country: freezed == country ? _value.country : country as String?,
-      phone: freezed == phone ? _value.phone : phone as String?,
-      allergies: freezed == allergies ? _value.allergies : allergies as String?,
-      emergencyContactName: freezed == emergencyContactName ? _value.emergencyContactName : emergencyContactName as String?,
-      emergencyContactPhone: freezed == emergencyContactPhone ? _value.emergencyContactPhone : emergencyContactPhone as String?,
-      relationshipTag: null == relationshipTag ? _value.relationshipTag : relationshipTag as RelationshipTag,
-      avatarPath: freezed == avatarPath ? _value.avatarPath : avatarPath as String?,
+    return _then(_self.copyWith(
+      displayName: null == displayName
+          ? _self.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      dateOfBirth: freezed == dateOfBirth
+          ? _self.dateOfBirth
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine1: freezed == addressLine1
+          ? _self.addressLine1
+          : addressLine1 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine2: freezed == addressLine2
+          ? _self.addressLine2
+          : addressLine2 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      city: freezed == city
+          ? _self.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stateProvince: freezed == stateProvince
+          ? _self.stateProvince
+          : stateProvince // ignore: cast_nullable_to_non_nullable
+              as String?,
+      postalCode: freezed == postalCode
+          ? _self.postalCode
+          : postalCode // ignore: cast_nullable_to_non_nullable
+              as String?,
+      country: freezed == country
+          ? _self.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _self.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      allergies: freezed == allergies
+          ? _self.allergies
+          : allergies // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactName: freezed == emergencyContactName
+          ? _self.emergencyContactName
+          : emergencyContactName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactPhone: freezed == emergencyContactPhone
+          ? _self.emergencyContactPhone
+          : emergencyContactPhone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      relationshipTag: null == relationshipTag
+          ? _self.relationshipTag
+          : relationshipTag // ignore: cast_nullable_to_non_nullable
+              as RelationshipTag,
+      avatarPath: freezed == avatarPath
+          ? _self.avatarPath
+          : avatarPath // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
+/// Adds pattern-matching-related methods to [ProfileCreateRequest].
+extension ProfileCreateRequestPatterns on ProfileCreateRequest {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_ProfileCreateRequest value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileCreateRequest() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_ProfileCreateRequest value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileCreateRequest():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_ProfileCreateRequest value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileCreateRequest() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            String displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag relationshipTag,
+            String? avatarPath)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileCreateRequest() when $default != null:
+        return $default(
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            String displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag relationshipTag,
+            String? avatarPath)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileCreateRequest():
+        return $default(
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            String displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag relationshipTag,
+            String? avatarPath)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileCreateRequest() when $default != null:
+        return $default(
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
-class _$ProfileCreateRequestImpl implements _ProfileCreateRequest {
-  const _$ProfileCreateRequestImpl({
-    required this.displayName,
-    this.dateOfBirth,
-    this.addressLine1,
-    this.addressLine2,
-    this.city,
-    this.stateProvince,
-    this.postalCode,
-    this.country,
-    this.phone,
-    this.allergies,
-    this.emergencyContactName,
-    this.emergencyContactPhone,
-    required this.relationshipTag,
-    this.avatarPath,
-  });
+
+class _ProfileCreateRequest implements ProfileCreateRequest {
+  const _ProfileCreateRequest(
+      {required this.displayName,
+      this.dateOfBirth,
+      this.addressLine1,
+      this.addressLine2,
+      this.city,
+      this.stateProvince,
+      this.postalCode,
+      this.country,
+      this.phone,
+      this.allergies,
+      this.emergencyContactName,
+      this.emergencyContactPhone,
+      required this.relationshipTag,
+      this.avatarPath});
 
   @override
   final String displayName;
@@ -713,148 +1300,110 @@ class _$ProfileCreateRequestImpl implements _ProfileCreateRequest {
   @override
   final String? avatarPath;
 
+  /// Create a copy of ProfileCreateRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'ProfileCreateRequest(displayName: $displayName, relationshipTag: $relationshipTag)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ProfileCreateRequestCopyWith<_ProfileCreateRequest> get copyWith =>
+      __$ProfileCreateRequestCopyWithImpl<_ProfileCreateRequest>(
+          this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ProfileCreateRequestImpl &&
-            other.displayName == displayName &&
-            other.relationshipTag == relationshipTag);
+            other is _ProfileCreateRequest &&
+            (identical(other.displayName, displayName) ||
+                other.displayName == displayName) &&
+            (identical(other.dateOfBirth, dateOfBirth) ||
+                other.dateOfBirth == dateOfBirth) &&
+            (identical(other.addressLine1, addressLine1) ||
+                other.addressLine1 == addressLine1) &&
+            (identical(other.addressLine2, addressLine2) ||
+                other.addressLine2 == addressLine2) &&
+            (identical(other.city, city) || other.city == city) &&
+            (identical(other.stateProvince, stateProvince) ||
+                other.stateProvince == stateProvince) &&
+            (identical(other.postalCode, postalCode) ||
+                other.postalCode == postalCode) &&
+            (identical(other.country, country) || other.country == country) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.allergies, allergies) ||
+                other.allergies == allergies) &&
+            (identical(other.emergencyContactName, emergencyContactName) ||
+                other.emergencyContactName == emergencyContactName) &&
+            (identical(other.emergencyContactPhone, emergencyContactPhone) ||
+                other.emergencyContactPhone == emergencyContactPhone) &&
+            (identical(other.relationshipTag, relationshipTag) ||
+                other.relationshipTag == relationshipTag) &&
+            (identical(other.avatarPath, avatarPath) ||
+                other.avatarPath == avatarPath));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, displayName, relationshipTag);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ProfileCreateRequestImplCopyWith<_$ProfileCreateRequestImpl>
-      get copyWith =>
-          __$$ProfileCreateRequestImplCopyWithImpl<_$ProfileCreateRequestImpl>(
-              this, _$identity);
-}
-
-abstract class _ProfileCreateRequest implements ProfileCreateRequest {
-  const factory _ProfileCreateRequest({
-    required final String displayName,
-    final String? dateOfBirth,
-    final String? addressLine1,
-    final String? addressLine2,
-    final String? city,
-    final String? stateProvince,
-    final String? postalCode,
-    final String? country,
-    final String? phone,
-    final String? allergies,
-    final String? emergencyContactName,
-    final String? emergencyContactPhone,
-    required final RelationshipTag relationshipTag,
-    final String? avatarPath,
-  }) = _$ProfileCreateRequestImpl;
+  int get hashCode => Object.hash(
+      runtimeType,
+      displayName,
+      dateOfBirth,
+      addressLine1,
+      addressLine2,
+      city,
+      stateProvince,
+      postalCode,
+      country,
+      phone,
+      allergies,
+      emergencyContactName,
+      emergencyContactPhone,
+      relationshipTag,
+      avatarPath);
 
   @override
-  String get displayName;
-  @override
-  String? get dateOfBirth;
-  @override
-  String? get addressLine1;
-  @override
-  String? get addressLine2;
-  @override
-  String? get city;
-  @override
-  String? get stateProvince;
-  @override
-  String? get postalCode;
-  @override
-  String? get country;
-  @override
-  String? get phone;
-  @override
-  String? get allergies;
-  @override
-  String? get emergencyContactName;
-  @override
-  String? get emergencyContactPhone;
-  @override
-  RelationshipTag get relationshipTag;
-  @override
-  String? get avatarPath;
-  @override
-  @JsonKey(ignore: true)
-  _$$ProfileCreateRequestImplCopyWith<_$ProfileCreateRequestImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-// ---- ProfileUpdateRequest ----
-
-/// @nodoc
-mixin _$ProfileUpdateRequest {
-  String get id => throw _privateConstructorUsedError;
-  String? get displayName => throw _privateConstructorUsedError;
-  String? get dateOfBirth => throw _privateConstructorUsedError;
-  String? get addressLine1 => throw _privateConstructorUsedError;
-  String? get addressLine2 => throw _privateConstructorUsedError;
-  String? get city => throw _privateConstructorUsedError;
-  String? get stateProvince => throw _privateConstructorUsedError;
-  String? get postalCode => throw _privateConstructorUsedError;
-  String? get country => throw _privateConstructorUsedError;
-  String? get phone => throw _privateConstructorUsedError;
-  String? get allergies => throw _privateConstructorUsedError;
-  String? get emergencyContactName => throw _privateConstructorUsedError;
-  String? get emergencyContactPhone => throw _privateConstructorUsedError;
-  RelationshipTag? get relationshipTag => throw _privateConstructorUsedError;
-  String? get avatarPath => throw _privateConstructorUsedError;
-
-  @JsonKey(ignore: true)
-  $ProfileUpdateRequestCopyWith<ProfileUpdateRequest> get copyWith =>
-      throw _privateConstructorUsedError;
+  String toString() {
+    return 'ProfileCreateRequest(displayName: $displayName, dateOfBirth: $dateOfBirth, addressLine1: $addressLine1, addressLine2: $addressLine2, city: $city, stateProvince: $stateProvince, postalCode: $postalCode, country: $country, phone: $phone, allergies: $allergies, emergencyContactName: $emergencyContactName, emergencyContactPhone: $emergencyContactPhone, relationshipTag: $relationshipTag, avatarPath: $avatarPath)';
+  }
 }
 
 /// @nodoc
-abstract class $ProfileUpdateRequestCopyWith<$Res> {
-  factory $ProfileUpdateRequestCopyWith(ProfileUpdateRequest value,
-          $Res Function(ProfileUpdateRequest) then) =
-      _$ProfileUpdateRequestCopyWithImpl<$Res, ProfileUpdateRequest>;
+abstract mixin class _$ProfileCreateRequestCopyWith<$Res>
+    implements $ProfileCreateRequestCopyWith<$Res> {
+  factory _$ProfileCreateRequestCopyWith(_ProfileCreateRequest value,
+          $Res Function(_ProfileCreateRequest) _then) =
+      __$ProfileCreateRequestCopyWithImpl;
+  @override
   @useResult
-  $Res call({
-    String id,
-    String? displayName,
-    String? dateOfBirth,
-    String? addressLine1,
-    String? addressLine2,
-    String? city,
-    String? stateProvince,
-    String? postalCode,
-    String? country,
-    String? phone,
-    String? allergies,
-    String? emergencyContactName,
-    String? emergencyContactPhone,
-    RelationshipTag? relationshipTag,
-    String? avatarPath,
-  });
+  $Res call(
+      {String displayName,
+      String? dateOfBirth,
+      String? addressLine1,
+      String? addressLine2,
+      String? city,
+      String? stateProvince,
+      String? postalCode,
+      String? country,
+      String? phone,
+      String? allergies,
+      String? emergencyContactName,
+      String? emergencyContactPhone,
+      RelationshipTag relationshipTag,
+      String? avatarPath});
 }
 
 /// @nodoc
-class _$ProfileUpdateRequestCopyWithImpl<$Res,
-        $Val extends ProfileUpdateRequest>
-    implements $ProfileUpdateRequestCopyWith<$Res> {
-  _$ProfileUpdateRequestCopyWithImpl(this._value, this._then);
+class __$ProfileCreateRequestCopyWithImpl<$Res>
+    implements _$ProfileCreateRequestCopyWith<$Res> {
+  __$ProfileCreateRequestCopyWithImpl(this._self, this._then);
 
-  final $Val _value;
-  final $Res Function($Val) _then;
+  final _ProfileCreateRequest _self;
+  final $Res Function(_ProfileCreateRequest) _then;
 
-  @pragma('vm:prefer-inline')
+  /// Create a copy of ProfileCreateRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
+  @pragma('vm:prefer-inline')
   $Res call({
-    Object? id = null,
-    Object? displayName = freezed,
+    Object? displayName = null,
     Object? dateOfBirth = freezed,
     Object? addressLine1 = freezed,
     Object? addressLine2 = freezed,
@@ -866,122 +1415,541 @@ class _$ProfileUpdateRequestCopyWithImpl<$Res,
     Object? allergies = freezed,
     Object? emergencyContactName = freezed,
     Object? emergencyContactPhone = freezed,
-    Object? relationshipTag = freezed,
+    Object? relationshipTag = null,
     Object? avatarPath = freezed,
   }) {
-    return _then(_value.copyWith(
-      id: null == id ? _value.id : id as String,
-      displayName: freezed == displayName ? _value.displayName : displayName as String?,
-      dateOfBirth: freezed == dateOfBirth ? _value.dateOfBirth : dateOfBirth as String?,
-      addressLine1: freezed == addressLine1 ? _value.addressLine1 : addressLine1 as String?,
-      addressLine2: freezed == addressLine2 ? _value.addressLine2 : addressLine2 as String?,
-      city: freezed == city ? _value.city : city as String?,
-      stateProvince: freezed == stateProvince ? _value.stateProvince : stateProvince as String?,
-      postalCode: freezed == postalCode ? _value.postalCode : postalCode as String?,
-      country: freezed == country ? _value.country : country as String?,
-      phone: freezed == phone ? _value.phone : phone as String?,
-      allergies: freezed == allergies ? _value.allergies : allergies as String?,
-      emergencyContactName: freezed == emergencyContactName ? _value.emergencyContactName : emergencyContactName as String?,
-      emergencyContactPhone: freezed == emergencyContactPhone ? _value.emergencyContactPhone : emergencyContactPhone as String?,
-      relationshipTag: freezed == relationshipTag ? _value.relationshipTag : relationshipTag as RelationshipTag?,
-      avatarPath: freezed == avatarPath ? _value.avatarPath : avatarPath as String?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$ProfileUpdateRequestImplCopyWith<$Res>
-    implements $ProfileUpdateRequestCopyWith<$Res> {
-  factory _$$ProfileUpdateRequestImplCopyWith(_$ProfileUpdateRequestImpl value,
-          $Res Function(_$ProfileUpdateRequestImpl) then) =
-      __$$ProfileUpdateRequestImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({
-    String id,
-    String? displayName,
-    String? dateOfBirth,
-    String? addressLine1,
-    String? addressLine2,
-    String? city,
-    String? stateProvince,
-    String? postalCode,
-    String? country,
-    String? phone,
-    String? allergies,
-    String? emergencyContactName,
-    String? emergencyContactPhone,
-    RelationshipTag? relationshipTag,
-    String? avatarPath,
-  });
-}
-
-/// @nodoc
-class __$$ProfileUpdateRequestImplCopyWithImpl<$Res>
-    extends _$ProfileUpdateRequestCopyWithImpl<$Res, _$ProfileUpdateRequestImpl>
-    implements _$$ProfileUpdateRequestImplCopyWith<$Res> {
-  __$$ProfileUpdateRequestImplCopyWithImpl(_$ProfileUpdateRequestImpl _value,
-      $Res Function(_$ProfileUpdateRequestImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? displayName = freezed,
-    Object? dateOfBirth = freezed,
-    Object? addressLine1 = freezed,
-    Object? addressLine2 = freezed,
-    Object? city = freezed,
-    Object? stateProvince = freezed,
-    Object? postalCode = freezed,
-    Object? country = freezed,
-    Object? phone = freezed,
-    Object? allergies = freezed,
-    Object? emergencyContactName = freezed,
-    Object? emergencyContactPhone = freezed,
-    Object? relationshipTag = freezed,
-    Object? avatarPath = freezed,
-  }) {
-    return _then(_$ProfileUpdateRequestImpl(
-      id: null == id ? _value.id : id as String,
-      displayName: freezed == displayName ? _value.displayName : displayName as String?,
-      dateOfBirth: freezed == dateOfBirth ? _value.dateOfBirth : dateOfBirth as String?,
-      addressLine1: freezed == addressLine1 ? _value.addressLine1 : addressLine1 as String?,
-      addressLine2: freezed == addressLine2 ? _value.addressLine2 : addressLine2 as String?,
-      city: freezed == city ? _value.city : city as String?,
-      stateProvince: freezed == stateProvince ? _value.stateProvince : stateProvince as String?,
-      postalCode: freezed == postalCode ? _value.postalCode : postalCode as String?,
-      country: freezed == country ? _value.country : country as String?,
-      phone: freezed == phone ? _value.phone : phone as String?,
-      allergies: freezed == allergies ? _value.allergies : allergies as String?,
-      emergencyContactName: freezed == emergencyContactName ? _value.emergencyContactName : emergencyContactName as String?,
-      emergencyContactPhone: freezed == emergencyContactPhone ? _value.emergencyContactPhone : emergencyContactPhone as String?,
-      relationshipTag: freezed == relationshipTag ? _value.relationshipTag : relationshipTag as RelationshipTag?,
-      avatarPath: freezed == avatarPath ? _value.avatarPath : avatarPath as String?,
+    return _then(_ProfileCreateRequest(
+      displayName: null == displayName
+          ? _self.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      dateOfBirth: freezed == dateOfBirth
+          ? _self.dateOfBirth
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine1: freezed == addressLine1
+          ? _self.addressLine1
+          : addressLine1 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine2: freezed == addressLine2
+          ? _self.addressLine2
+          : addressLine2 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      city: freezed == city
+          ? _self.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stateProvince: freezed == stateProvince
+          ? _self.stateProvince
+          : stateProvince // ignore: cast_nullable_to_non_nullable
+              as String?,
+      postalCode: freezed == postalCode
+          ? _self.postalCode
+          : postalCode // ignore: cast_nullable_to_non_nullable
+              as String?,
+      country: freezed == country
+          ? _self.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _self.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      allergies: freezed == allergies
+          ? _self.allergies
+          : allergies // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactName: freezed == emergencyContactName
+          ? _self.emergencyContactName
+          : emergencyContactName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactPhone: freezed == emergencyContactPhone
+          ? _self.emergencyContactPhone
+          : emergencyContactPhone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      relationshipTag: null == relationshipTag
+          ? _self.relationshipTag
+          : relationshipTag // ignore: cast_nullable_to_non_nullable
+              as RelationshipTag,
+      avatarPath: freezed == avatarPath
+          ? _self.avatarPath
+          : avatarPath // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
 /// @nodoc
-class _$ProfileUpdateRequestImpl implements _ProfileUpdateRequest {
-  const _$ProfileUpdateRequestImpl({
-    required this.id,
-    this.displayName,
-    this.dateOfBirth,
-    this.addressLine1,
-    this.addressLine2,
-    this.city,
-    this.stateProvince,
-    this.postalCode,
-    this.country,
-    this.phone,
-    this.allergies,
-    this.emergencyContactName,
-    this.emergencyContactPhone,
-    this.relationshipTag,
-    this.avatarPath,
-  });
+mixin _$ProfileUpdateRequest {
+  String get id;
+  String? get displayName;
+  String? get dateOfBirth;
+  String? get addressLine1;
+  String? get addressLine2;
+  String? get city;
+  String? get stateProvince;
+  String? get postalCode;
+  String? get country;
+  String? get phone;
+  String? get allergies;
+  String? get emergencyContactName;
+  String? get emergencyContactPhone;
+  RelationshipTag? get relationshipTag;
+  String? get avatarPath;
+
+  /// Create a copy of ProfileUpdateRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $ProfileUpdateRequestCopyWith<ProfileUpdateRequest> get copyWith =>
+      _$ProfileUpdateRequestCopyWithImpl<ProfileUpdateRequest>(
+          this as ProfileUpdateRequest, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ProfileUpdateRequest &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.displayName, displayName) ||
+                other.displayName == displayName) &&
+            (identical(other.dateOfBirth, dateOfBirth) ||
+                other.dateOfBirth == dateOfBirth) &&
+            (identical(other.addressLine1, addressLine1) ||
+                other.addressLine1 == addressLine1) &&
+            (identical(other.addressLine2, addressLine2) ||
+                other.addressLine2 == addressLine2) &&
+            (identical(other.city, city) || other.city == city) &&
+            (identical(other.stateProvince, stateProvince) ||
+                other.stateProvince == stateProvince) &&
+            (identical(other.postalCode, postalCode) ||
+                other.postalCode == postalCode) &&
+            (identical(other.country, country) || other.country == country) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.allergies, allergies) ||
+                other.allergies == allergies) &&
+            (identical(other.emergencyContactName, emergencyContactName) ||
+                other.emergencyContactName == emergencyContactName) &&
+            (identical(other.emergencyContactPhone, emergencyContactPhone) ||
+                other.emergencyContactPhone == emergencyContactPhone) &&
+            (identical(other.relationshipTag, relationshipTag) ||
+                other.relationshipTag == relationshipTag) &&
+            (identical(other.avatarPath, avatarPath) ||
+                other.avatarPath == avatarPath));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      displayName,
+      dateOfBirth,
+      addressLine1,
+      addressLine2,
+      city,
+      stateProvince,
+      postalCode,
+      country,
+      phone,
+      allergies,
+      emergencyContactName,
+      emergencyContactPhone,
+      relationshipTag,
+      avatarPath);
+
+  @override
+  String toString() {
+    return 'ProfileUpdateRequest(id: $id, displayName: $displayName, dateOfBirth: $dateOfBirth, addressLine1: $addressLine1, addressLine2: $addressLine2, city: $city, stateProvince: $stateProvince, postalCode: $postalCode, country: $country, phone: $phone, allergies: $allergies, emergencyContactName: $emergencyContactName, emergencyContactPhone: $emergencyContactPhone, relationshipTag: $relationshipTag, avatarPath: $avatarPath)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $ProfileUpdateRequestCopyWith<$Res> {
+  factory $ProfileUpdateRequestCopyWith(ProfileUpdateRequest value,
+          $Res Function(ProfileUpdateRequest) _then) =
+      _$ProfileUpdateRequestCopyWithImpl;
+  @useResult
+  $Res call(
+      {String id,
+      String? displayName,
+      String? dateOfBirth,
+      String? addressLine1,
+      String? addressLine2,
+      String? city,
+      String? stateProvince,
+      String? postalCode,
+      String? country,
+      String? phone,
+      String? allergies,
+      String? emergencyContactName,
+      String? emergencyContactPhone,
+      RelationshipTag? relationshipTag,
+      String? avatarPath});
+}
+
+/// @nodoc
+class _$ProfileUpdateRequestCopyWithImpl<$Res>
+    implements $ProfileUpdateRequestCopyWith<$Res> {
+  _$ProfileUpdateRequestCopyWithImpl(this._self, this._then);
+
+  final ProfileUpdateRequest _self;
+  final $Res Function(ProfileUpdateRequest) _then;
+
+  /// Create a copy of ProfileUpdateRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? displayName = freezed,
+    Object? dateOfBirth = freezed,
+    Object? addressLine1 = freezed,
+    Object? addressLine2 = freezed,
+    Object? city = freezed,
+    Object? stateProvince = freezed,
+    Object? postalCode = freezed,
+    Object? country = freezed,
+    Object? phone = freezed,
+    Object? allergies = freezed,
+    Object? emergencyContactName = freezed,
+    Object? emergencyContactPhone = freezed,
+    Object? relationshipTag = freezed,
+    Object? avatarPath = freezed,
+  }) {
+    return _then(_self.copyWith(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: freezed == displayName
+          ? _self.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      dateOfBirth: freezed == dateOfBirth
+          ? _self.dateOfBirth
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine1: freezed == addressLine1
+          ? _self.addressLine1
+          : addressLine1 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine2: freezed == addressLine2
+          ? _self.addressLine2
+          : addressLine2 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      city: freezed == city
+          ? _self.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stateProvince: freezed == stateProvince
+          ? _self.stateProvince
+          : stateProvince // ignore: cast_nullable_to_non_nullable
+              as String?,
+      postalCode: freezed == postalCode
+          ? _self.postalCode
+          : postalCode // ignore: cast_nullable_to_non_nullable
+              as String?,
+      country: freezed == country
+          ? _self.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _self.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      allergies: freezed == allergies
+          ? _self.allergies
+          : allergies // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactName: freezed == emergencyContactName
+          ? _self.emergencyContactName
+          : emergencyContactName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactPhone: freezed == emergencyContactPhone
+          ? _self.emergencyContactPhone
+          : emergencyContactPhone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      relationshipTag: freezed == relationshipTag
+          ? _self.relationshipTag
+          : relationshipTag // ignore: cast_nullable_to_non_nullable
+              as RelationshipTag?,
+      avatarPath: freezed == avatarPath
+          ? _self.avatarPath
+          : avatarPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [ProfileUpdateRequest].
+extension ProfileUpdateRequestPatterns on ProfileUpdateRequest {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_ProfileUpdateRequest value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileUpdateRequest() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_ProfileUpdateRequest value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileUpdateRequest():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_ProfileUpdateRequest value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileUpdateRequest() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            String id,
+            String? displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag? relationshipTag,
+            String? avatarPath)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileUpdateRequest() when $default != null:
+        return $default(
+            _that.id,
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            String id,
+            String? displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag? relationshipTag,
+            String? avatarPath)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileUpdateRequest():
+        return $default(
+            _that.id,
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            String id,
+            String? displayName,
+            String? dateOfBirth,
+            String? addressLine1,
+            String? addressLine2,
+            String? city,
+            String? stateProvince,
+            String? postalCode,
+            String? country,
+            String? phone,
+            String? allergies,
+            String? emergencyContactName,
+            String? emergencyContactPhone,
+            RelationshipTag? relationshipTag,
+            String? avatarPath)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ProfileUpdateRequest() when $default != null:
+        return $default(
+            _that.id,
+            _that.displayName,
+            _that.dateOfBirth,
+            _that.addressLine1,
+            _that.addressLine2,
+            _that.city,
+            _that.stateProvince,
+            _that.postalCode,
+            _that.country,
+            _that.phone,
+            _that.allergies,
+            _that.emergencyContactName,
+            _that.emergencyContactPhone,
+            _that.relationshipTag,
+            _that.avatarPath);
+      case _:
+        return null;
+    }
+  }
+}
+
+/// @nodoc
+
+class _ProfileUpdateRequest implements ProfileUpdateRequest {
+  const _ProfileUpdateRequest(
+      {required this.id,
+      this.displayName,
+      this.dateOfBirth,
+      this.addressLine1,
+      this.addressLine2,
+      this.city,
+      this.stateProvince,
+      this.postalCode,
+      this.country,
+      this.phone,
+      this.allergies,
+      this.emergencyContactName,
+      this.emergencyContactPhone,
+      this.relationshipTag,
+      this.avatarPath});
 
   @override
   final String id;
@@ -1014,80 +1982,191 @@ class _$ProfileUpdateRequestImpl implements _ProfileUpdateRequest {
   @override
   final String? avatarPath;
 
+  /// Create a copy of ProfileUpdateRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() => 'ProfileUpdateRequest(id: $id)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ProfileUpdateRequestCopyWith<_ProfileUpdateRequest> get copyWith =>
+      __$ProfileUpdateRequestCopyWithImpl<_ProfileUpdateRequest>(
+          this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ProfileUpdateRequestImpl &&
-            other.id == id);
+            other is _ProfileUpdateRequest &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.displayName, displayName) ||
+                other.displayName == displayName) &&
+            (identical(other.dateOfBirth, dateOfBirth) ||
+                other.dateOfBirth == dateOfBirth) &&
+            (identical(other.addressLine1, addressLine1) ||
+                other.addressLine1 == addressLine1) &&
+            (identical(other.addressLine2, addressLine2) ||
+                other.addressLine2 == addressLine2) &&
+            (identical(other.city, city) || other.city == city) &&
+            (identical(other.stateProvince, stateProvince) ||
+                other.stateProvince == stateProvince) &&
+            (identical(other.postalCode, postalCode) ||
+                other.postalCode == postalCode) &&
+            (identical(other.country, country) || other.country == country) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.allergies, allergies) ||
+                other.allergies == allergies) &&
+            (identical(other.emergencyContactName, emergencyContactName) ||
+                other.emergencyContactName == emergencyContactName) &&
+            (identical(other.emergencyContactPhone, emergencyContactPhone) ||
+                other.emergencyContactPhone == emergencyContactPhone) &&
+            (identical(other.relationshipTag, relationshipTag) ||
+                other.relationshipTag == relationshipTag) &&
+            (identical(other.avatarPath, avatarPath) ||
+                other.avatarPath == avatarPath));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      displayName,
+      dateOfBirth,
+      addressLine1,
+      addressLine2,
+      city,
+      stateProvince,
+      postalCode,
+      country,
+      phone,
+      allergies,
+      emergencyContactName,
+      emergencyContactPhone,
+      relationshipTag,
+      avatarPath);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'ProfileUpdateRequest(id: $id, displayName: $displayName, dateOfBirth: $dateOfBirth, addressLine1: $addressLine1, addressLine2: $addressLine2, city: $city, stateProvince: $stateProvince, postalCode: $postalCode, country: $country, phone: $phone, allergies: $allergies, emergencyContactName: $emergencyContactName, emergencyContactPhone: $emergencyContactPhone, relationshipTag: $relationshipTag, avatarPath: $avatarPath)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$ProfileUpdateRequestCopyWith<$Res>
+    implements $ProfileUpdateRequestCopyWith<$Res> {
+  factory _$ProfileUpdateRequestCopyWith(_ProfileUpdateRequest value,
+          $Res Function(_ProfileUpdateRequest) _then) =
+      __$ProfileUpdateRequestCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String? displayName,
+      String? dateOfBirth,
+      String? addressLine1,
+      String? addressLine2,
+      String? city,
+      String? stateProvince,
+      String? postalCode,
+      String? country,
+      String? phone,
+      String? allergies,
+      String? emergencyContactName,
+      String? emergencyContactPhone,
+      RelationshipTag? relationshipTag,
+      String? avatarPath});
+}
+
+/// @nodoc
+class __$ProfileUpdateRequestCopyWithImpl<$Res>
+    implements _$ProfileUpdateRequestCopyWith<$Res> {
+  __$ProfileUpdateRequestCopyWithImpl(this._self, this._then);
+
+  final _ProfileUpdateRequest _self;
+  final $Res Function(_ProfileUpdateRequest) _then;
+
+  /// Create a copy of ProfileUpdateRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$ProfileUpdateRequestImplCopyWith<_$ProfileUpdateRequestImpl>
-      get copyWith =>
-          __$$ProfileUpdateRequestImplCopyWithImpl<_$ProfileUpdateRequestImpl>(
-              this, _$identity);
+  $Res call({
+    Object? id = null,
+    Object? displayName = freezed,
+    Object? dateOfBirth = freezed,
+    Object? addressLine1 = freezed,
+    Object? addressLine2 = freezed,
+    Object? city = freezed,
+    Object? stateProvince = freezed,
+    Object? postalCode = freezed,
+    Object? country = freezed,
+    Object? phone = freezed,
+    Object? allergies = freezed,
+    Object? emergencyContactName = freezed,
+    Object? emergencyContactPhone = freezed,
+    Object? relationshipTag = freezed,
+    Object? avatarPath = freezed,
+  }) {
+    return _then(_ProfileUpdateRequest(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: freezed == displayName
+          ? _self.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      dateOfBirth: freezed == dateOfBirth
+          ? _self.dateOfBirth
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine1: freezed == addressLine1
+          ? _self.addressLine1
+          : addressLine1 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addressLine2: freezed == addressLine2
+          ? _self.addressLine2
+          : addressLine2 // ignore: cast_nullable_to_non_nullable
+              as String?,
+      city: freezed == city
+          ? _self.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stateProvince: freezed == stateProvince
+          ? _self.stateProvince
+          : stateProvince // ignore: cast_nullable_to_non_nullable
+              as String?,
+      postalCode: freezed == postalCode
+          ? _self.postalCode
+          : postalCode // ignore: cast_nullable_to_non_nullable
+              as String?,
+      country: freezed == country
+          ? _self.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _self.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      allergies: freezed == allergies
+          ? _self.allergies
+          : allergies // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactName: freezed == emergencyContactName
+          ? _self.emergencyContactName
+          : emergencyContactName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      emergencyContactPhone: freezed == emergencyContactPhone
+          ? _self.emergencyContactPhone
+          : emergencyContactPhone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      relationshipTag: freezed == relationshipTag
+          ? _self.relationshipTag
+          : relationshipTag // ignore: cast_nullable_to_non_nullable
+              as RelationshipTag?,
+      avatarPath: freezed == avatarPath
+          ? _self.avatarPath
+          : avatarPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
 }
 
-abstract class _ProfileUpdateRequest implements ProfileUpdateRequest {
-  const factory _ProfileUpdateRequest({
-    required final String id,
-    final String? displayName,
-    final String? dateOfBirth,
-    final String? addressLine1,
-    final String? addressLine2,
-    final String? city,
-    final String? stateProvince,
-    final String? postalCode,
-    final String? country,
-    final String? phone,
-    final String? allergies,
-    final String? emergencyContactName,
-    final String? emergencyContactPhone,
-    final RelationshipTag? relationshipTag,
-    final String? avatarPath,
-  }) = _$ProfileUpdateRequestImpl;
-
-  @override
-  String get id;
-  @override
-  String? get displayName;
-  @override
-  String? get dateOfBirth;
-  @override
-  String? get addressLine1;
-  @override
-  String? get addressLine2;
-  @override
-  String? get city;
-  @override
-  String? get stateProvince;
-  @override
-  String? get postalCode;
-  @override
-  String? get country;
-  @override
-  String? get phone;
-  @override
-  String? get allergies;
-  @override
-  String? get emergencyContactName;
-  @override
-  String? get emergencyContactPhone;
-  @override
-  RelationshipTag? get relationshipTag;
-  @override
-  String? get avatarPath;
-  @override
-  @JsonKey(ignore: true)
-  _$$ProfileUpdateRequestImplCopyWith<_$ProfileUpdateRequestImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
+// dart format on

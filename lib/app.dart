@@ -30,12 +30,12 @@ import 'providers/auth_providers.dart';
 // Riverpod ProviderSubscription and calls notifyListeners() whenever the
 // watched provider emits a new value. GoRouter then re-runs its redirect.
 
-class _ProviderChangeNotifier<T> extends ChangeNotifier {
-  _ProviderChangeNotifier(ProviderContainer container, ProviderListenable<T> provider) {
-    _subscription = container.listen<T>(provider, (_, __) => notifyListeners());
+class _AuthChangeNotifier extends ChangeNotifier {
+  _AuthChangeNotifier(ProviderContainer container) {
+    _subscription = container.listen(authStateProvider, (_, __) => notifyListeners());
   }
 
-  late final ProviderSubscription<T> _subscription;
+  late final ProviderSubscription<AuthState> _subscription;
 
   @override
   void dispose() {
@@ -55,7 +55,7 @@ class AutofillApp extends ConsumerStatefulWidget {
 
 class _AutofillAppState extends ConsumerState<AutofillApp> {
   late final GoRouter _router;
-  late final _ProviderChangeNotifier<AuthState> _authChangeNotifier;
+  late final _AuthChangeNotifier _authChangeNotifier;
 
   @override
   void initState() {
@@ -81,16 +81,13 @@ class _AutofillAppState extends ConsumerState<AutofillApp> {
   void _initRouter() {
     _routerInitialized = true;
     final container = ProviderScope.containerOf(context);
-    _authChangeNotifier = _ProviderChangeNotifier<AuthState>(
-      container,
-      authStateNotifierProvider,
-    );
+    _authChangeNotifier = _AuthChangeNotifier(container);
 
     _router = GoRouter(
       initialLocation: '/auth',
       refreshListenable: _authChangeNotifier,
       redirect: (context, state) {
-        final authState = container.read(authStateNotifierProvider);
+        final authState = container.read(authStateProvider);
         final isLocked = authState == AuthState.locked;
         final isAuthRoute = state.matchedLocation == '/auth';
 

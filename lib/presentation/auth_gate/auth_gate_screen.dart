@@ -59,20 +59,18 @@ class _AuthGateScreenState extends ConsumerState<AuthGateScreen> {
     if (!isSupported) {
       // Device has no lock screen at all — allow access.
       // This is an edge case (e.g., emulator with no security set up).
-      ref.read(authStateNotifierProvider.notifier).unlock();
+      ref.read(authStateProvider.notifier).unlock();
       return;
     }
 
     try {
       final authenticated = await auth.authenticate(
         localizedReason: 'Unlock your family profiles',
-        options: const AuthenticationOptions(
-          biometricOnly: false, // REQUIRED — enables PIN/pattern fallback
-          stickyAuth: true, // Don't cancel when app backgrounds
-        ),
+        biometricOnly: false, // REQUIRED — enables PIN/pattern fallback
+        persistAcrossBackgrounding: true, // Don't cancel when app backgrounds
       );
       if (authenticated) {
-        ref.read(authStateNotifierProvider.notifier).unlock();
+        ref.read(authStateProvider.notifier).unlock();
       }
     } on PlatformException catch (e) {
       switch (e.code) {
